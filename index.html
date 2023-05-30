@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatable" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/380e254419.js" crossorigin="anonymous"></script>
+</head>    
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#journey">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hello</h1>
+                <h1>I'm <span>Akshay Sasi</span></h1>
+                <p>Developer</p>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------------about--------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <p>I am an enthusiastic, self-motivated, reliable, responsible and hard working person.
+                        I am a mature team worker and adaptable to all challenging situations.
+                        I am able to work well both in a team environment as well as using own initiative.
+                        I am able to work well under pressure and adhere to strict deadlines.
+                        I have good interpersonal skills, am an excellent team worker and am keen and very willing to learn and develop new skills.
+                        I am reliable and dependable and often seek new responsibilities within a wide range of employment areas. I have an active and dynamic approach to work and getting things done.
+                        I am determined and decisive. I identify and develop opportunities.</p>
+                        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('personal-details')">Personal Details</p>
+                            <p class="tab-links" onclick="opentab('strengths')">Strengths</p>
+                            <p class="tab-links" onclick="opentab('interests')">Intrests</p>
+                            <p class="tab-links" onclick="opentab('known-languages')">Known Languages</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="personal-details">
+                            <ul>
+                                <li><span>DOB</span><br>12-12-2000</li>
+                                <li><span>Nationality</span><br>Indian</li>
+                                <li><span>Gender</span><br>Male</li>
+                                <li><span>Marital Status</span><br>Single</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="strengths">
+                            <ul>
+                                <li><span>></span> Adaptability</li>
+                                <li><span>></span> Creativity</li>
+                                <li><span>></span> Problem Solving</li>
+                                <li><span>></span> Hardworking</li>
+                                <li><span>></span> Teamwork</li>
+                                <li><span>></span> Time Management</li>
+                            </ul>
+                        </div>
+                    
+                        <div class="tab-contents" id="interests">
+                            <ul>
+                                <li><span>></span> Movies</li>
+                                <li><span>></span> Gaming</li>
+                                <li><span>></span> Music</li>
+                                <li><span>></span> Coding</li>
+                                <li><span>></span> Football</li>
+                                <li><span>></span> Content writing</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="known-languages">
+                            <ul>
+                                <li><span>English</span><br> Proficiency : 4/5</li>
+                                <li><span>Malayalam</span><br>Proficiency : 4/5</li>
+                                <li><span>Hindi</span><br>Proficiency : 3/5</li>
+                            </ul>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------------------------------------------Journey--------------------------------------->
+<div id="journey">
+    <div class="container">
+    <h1 class="sub-title">My <span>Journey</span></h1>
+                <br>
+                <br>
+    <div class = "education-row">
+        <div class="education-column">
+            <h3 class="title"><span>Education</span></h3>
+            <div class="education-box">
+                <div class="education-content">
+                    <div class="content">
+                        <div class="year"><i class="fa-solid fa-calendar-check"></i> 2016 - 2017</div>
+                        <h3>10th - CBSE</h3>
+                        <p>Kendriya vidyalaya Kannur</p>
+                        <p>Secured 9 CGPA</p>
+                    </div>
+                </div>
+                <div class="education-content">
+                    <div class="content">
+                        <div class="year"><i class="fa-solid fa-calendar-check"></i> 2017 - 2019</div>
+                        <h3>12th - CBSE</h3>
+                        <p>Computer Science Stream</p>
+                        <p>Kendriya vidyalaya Kannur</p>
+                        <p>Secured 78.2 %</p>
+                    </div>
+                </div>
+                <div class="education-content">
+                    <div class="content">
+                        <div class="year"><i class="fa-solid fa-calendar-check"></i> 2019 - 2023</div>
+                        <h3>B.tech Computer science and Engineering</h3>
+                        <p>APJ Abdul Kalam Technological University</p>
+                        <p>Vimal Jyothi Engineering College, Chemperi</p>
+                        <p>Currently pursuing this course. CGPA (upto 7th semester)- 7.6</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+     <!--   <div class="education-column">
+            <h3 class=" title">Interships</h3>
+            <div class="education-box">
+                <div class="education-content">
+                    <div class="content">
+                        <div class="year"><i class="fa-solid fa-calendar-check"></i> 2016 - 2017</div>
+                        <h3>10th - CBSE</h3>
+                        <p>Kendriya vidyalaya Kannur</p>
+                    </div>
+                </div>
+                <div class="education-content">
+                    <div class="content">
+                        <div class="year"><i class="fa-solid fa-calendar-check"></i> 2016 - 2017</div>
+                        <h3>10th - CBSE</h3>
+                        <p>Kendriya vidyalaya Kannur</p>
+                    </div>
+                </div>
+                <div class="education-content">
+                    <div class="content">
+                        <div class="year"><i class="fa-solid fa-calendar-check"></i> 2016 - 2017</div>
+                        <h3>10th - CBSE</h3>
+                        <p>Kendriya vidyalaya Kannur</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+--------->
+
+    </div>
+                
+
+               
+    </div>
+   
+</div>
+</div>
+
+
+<!--------------------------------------------------skills--------------------------------------->
+
+<div id ="skills">
+    <div class="container">
+        <h1 class="sub-title">My <span>Skills</span></h1>
+        <div class="row">
+            <div class="skills-col-1">
+        
+        <div class="skill-name"><i class="fa-solid fa-code"></i>  Programming Skills</div>
+        <div class="skillsection">
+            <div class="skill-name">C & C++</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="80%" style="max-width:80%"></div>
+                </div>
+            </div>
+  
+        <div class="skillsection">
+            <div class="skill-name">Python</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="70%" style="max-width:70%"></div>
+                </div>
+            </div>
+  
+        <div class="skillsection">
+            <div class="skill-name">Java</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="70%" style="max-width:70%"></div>
+                </div>
+            </div>
+
+        <div class="skillsection">
+            <div class="skill-name">SQL</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="80%" style="max-width:80%"></div>
+                </div>
+            </div>
+
+        <div class="skillsection">
+            <div class="skill-name">HTML</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="80%" style="max-width:80%"></div>
+                </div>
+            </div>
+            <div class="skillsection">
+                <div class="skill-name">CSS</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="70%" style="max-width:70%"></div>
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="skills-col-2">
+            <div class="skill-name"><i class="fa-solid fa-wrench"></i>  Tools / IDE</Tools></div>
+        <div class="skillsection">
+            <div class="skill-name">Microsoft Office</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="90%" style="max-width:90%"></div>
+                </div>
+            </div>
+            <div class="skillsection">
+                <div class="skill-name">Visual Studio Code</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="80%" style="max-width:80%"></div>
+                    </div>
+                </div>
+                <div class="skillsection">
+                    <div class="skill-name">Android Studio</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="70%" style="max-width:70%"></div>
+                        </div>
+                    </div>
+                    <div class="skillsection">
+                        <div class="skill-name">Photoshop</div>
+                            <div class="skill-bar">
+                                <div class="skill-per" per="60%" style="max-width:60%"></div>
+                            </div>
+                        </div>
+                        <div class="skillsection">
+                            <div class="skill-name">Canva</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="90%" style="max-width:90%"></div>
+                                </div>
+                            </div>
+        </div>    
+        </div>
+        
+    </div>
+</div>
+
+    <!--------------------------------------Services---------------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My <span>Services</span></h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Write the service hereeeeeeeeeeee</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Graphic Designing</h2>
+                    <p>Write the service hereeeeeeeeeeee</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-tablet-screen-button"></i>
+                    <h2>Android development</h2>
+                    <p>Write the service hereeeeeeeeeeee</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <h2>Content Writing</h2>
+                    <p>Write the service hereeeeeeeeeeee</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------------Portfolio---------------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My <span>Projects</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Morse Code Gesture Translator</h3>
+                        <p>Morse Code Gesture Translator(MCGT) is a terminal based python application that converts finger morse in to English alphabets.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>PryMe</h3>
+                        <p>It is a privacy focused Social Media Application developed using Java, python and HTML.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Solor System Simulation</h3>
+                        <p>It is simple guided project which simulate the orbits of different planets around the sun using real astronomical values.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+<!-------------------------------------------------Contact------------------------------------------->    
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <span>Me</span></h1>
+                    <p> <i class="fa-solid fa-envelope"></i> akshaysasi12.knr@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> +91 8304912440</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/_Aks_haY_"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/ak__sky/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/akshay-sasi/"><i class="fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                    <a href="images/AKSHAY SASI RESUME.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © Made with <i class="fa-solid fa-heart"></i> by Akshay Sasi</p>
+        </div>
+
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzFlNdsH5xF_GjipdZTjuU8H1JnioRhb7gbNBYodM65-OlRnUVcOZc_zQhZRPUu_uIccg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
+
+<!--------------------------------------------------code end --------------------------------------->
