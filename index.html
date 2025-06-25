@@ -16,240 +16,667 @@
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#journey">Education</a></li>
+                    <li><a href="education.html">Education</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <h1>Hello</h1>
                 <h1>I'm <span>Akshay Sasi</span></h1>
-                <p>Developer</p>
+                <p><span class="typing-text"></span><span class="cursor">|</span></p>
             </div>
         </div>
     </div>
     <!----------------------------------------------------about--------------------------------------->
     <div id="about">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.png">
+            <div class="about-header">
+                <h1 class="section-title">About <span>Me</span></h1>
+                <div class="animated-line"></div>
+                <p class="tagline">Innovator • Developer • Creative Thinker</p>
+            </div>
+            
+            <div class="about-grid">
+                <!-- Profile Column -->
+                <div class="profile-column">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="images/user.png" alt="Akshay Sasi">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="profile-details">
+                            <div class="detail-item">
+                                <i class="fas fa-birthday-cake"></i>
+                                <span>12 Dec 2000</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-passport"></i>
+                                <span>Indian</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-user"></i>
+                                <span>Male</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-heart"></i>
+                                <span>Single</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About <span>Me</span></h1>
-                    <p>I am an enthusiastic, self-motivated, reliable, responsible and hard working person.
-                        I am a mature team worker and adaptable to all challenging situations.
-                        I am able to work well both in a team environment as well as using own initiative.
-                        I am able to work well under pressure and adhere to strict deadlines.
-                        I have good interpersonal skills, am an excellent team worker and am keen and very willing to learn and develop new skills.
-                        I am reliable and dependable and often seek new responsibilities within a wide range of employment areas. I have an active and dynamic approach to work and getting things done.
-                        I am determined and decisive. I identify and develop opportunities.</p>
+                
+                <!-- Content Column -->
+                <div class="content-column">
+                    <div class="about-content">
+                        <p class="intro-text">
+                            Passionate and results-driven Computer Science and Engineering postgraduate, specializing in Artificial Intelligence at Digital University Kerala, with a strong foundation in AI/ML, cognitive science, and creative design. Seeking opportunities to apply innovative thinking and technical expertise to develop practical, impactful solutions while continuously striving for professional growth and excellence.
+    
+                        </p>
                         
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('personal-details')">Personal Details</p>
-                            <p class="tab-links" onclick="opentab('interests')">Intrests</p>
-                            <p class="tab-links" onclick="opentab('known-languages')">Known Languages</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="personal-details">
-                            <ul>
-                                <li><span>DOB</span><br>12-12-2000</li>
-                                <li><span>Nationality</span><br>Indian</li>
-                                <li><span>Gender</span><br>Male</li>
-                                <li><span>Marital Status</span><br>Single</li>
-                            </ul>
-                        </div>
-                    
-                        <div class="tab-contents" id="interests">
-                            <ul>
-                                <li><span>></span> Movies</li>
-                                <li><span>></span> Gaming</li>
-                                <li><span>></span> Music</li>
-                                <li><span>></span> Coding</li>
-                                <li><span>></span> Football</li>
-                                <li><span>></span> Content writing</li>
-                            </ul>
-                        </div>
+                        <div class="expertise-section">
+                            <h3>My Expertise <i class="fas fa-rocket"></i></h3>
+                            <div class="expertise-tags">
+                                <span>AI & ML</span>
+                                <span>Deep Learning</span>
+                                <span>Cognitive Science</span>
+                                <span>Data Science</span>
+                                <span>Computer Vision</span>
+                                <span>Web Development</span>
+                                <span>Graphic Design</span>
 
-                        <div class="tab-contents" id="known-languages">
-                            <ul>
-                                <li><span>English</span><br> Proficiency : 4/5</li>
-                                <li><span>Malayalam</span><br>Proficiency : 4/5</li>
-                                <li><span>Hindi</span><br>Proficiency : 3/5</li>
-                            </ul>
+                            </div>
                         </div>
-
+                        
+                        <div class="quote-box">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Objective : Turn complex problems into elegant solutions through innovative and creative thinking with strong technical excellence.</p>
+                            <i class="fas fa-quote-right"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 <!--------------------------------------------------Journey--------------------------------------->
+
+<!--------------------------------------------------Journey--------------------------------------->
 <div id="journey">
     <div class="container">
-    <h1 class="sub-title">My <span>Journey</span></h1>
-                <br>
-                <br>
-    <div class = "education-row">
-        <div class="education-column">
-            <h3 class="title"><span>Education</span></h3>
-            <div class="education-box">
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class="fa-solid fa-calendar-check"></i> 2016 - 2017</div>
-                        <h3>10th - CBSE</h3>
-                        <p>Kendriya vidyalaya Kannur</p>
-                        <p>Secured 9 CGPA</p>
+        <!-- Section Header -->
+        <div class="section-header">
+            <h1 class="section-title">My <span>Journey</span></h1>
+            <div class="animated-divider">
+                <div class="divider-line"></div>
+                <div class="divider-dot"></div>
+            </div>
+        </div>
+
+        <!-- Journey Tabs -->
+        <div class="journey-tabs">
+            <button class="tab-btn active" onclick="openTab('experience')">Experience</button>
+            <button class="tab-btn" onclick="openTab('education')">Education</button>
+        </div>
+
+        <!-- Experience Content -->
+        <div id="experience" class="tab-content active-tab">
+            <div class="timeline">
+                <!-- M.Tech -->
+                <div class="timeline-item">
+                    <div class="timeline-badge">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3 class="left-align">AI Intern</h3>
+                            <span class="timeline-date">Jan 2025 - Present</span>
+                            <div class="institute-logo">
+                                <img src="images/quest_global.jpg" alt="quest_global.jpg">
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="institute">Quest Global</p>
+                            <p class="specialization">Trivandrum, Kerala</p>
+                            <ul class="achievements">
+                                <li>Worked on development of internal Machine Learning and Deep Learning projects.</li>
+                                <li>Researched on latest AI/ML and NLP frameworks for clustering and prediction.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class="fa-solid fa-calendar-check"></i> 2017 - 2019</div>
-                        <h3>12th - CBSE</h3>
-                        <p>Computer Science Stream</p>
-                        <p>Kendriya vidyalaya Kannur</p>
-                        <p>Secured 78.2 %</p>
+
+                <!-- B.Tech -->
+                <div class="timeline-item">
+                    <div class="timeline-badge">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3 class="left-align">Research & Development Intern</h3>
+                            <span class="timeline-date">April 2025 - July 2003</span>
+                            <div class="institute-logo">
+                                <img src="images/duk.png" alt="duk">
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="institute">AI Chip Center - Digital University Kerala</p>
+                            <p class="specialization">Trivandrum, Kerala</p>
+                            <ul class="achievements">
+                                <li>Designed custom compilers and processor architectures AI chips.</li>
+                                <li>Worked of X-HEEP and RISC-V processor architecture.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class="fa-solid fa-calendar-check"></i> 2019 - 2023</div>
-                        <h3>B.tech Computer science and Engineering</h3>
-                        <p>APJ Abdul Kalam Technological University</p>
-                        <p>Vimal Jyothi Engineering College, Chemperi</p>
-                        <p>Currently pursuing this course. CGPA (upto 7th semester)- 7.6</p>
+
+                <!-- 12th -->
+                <div class="timeline-item">
+                    <div class="timeline-badge">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3 class="left-align">Part-time Graphic Designer</h3>
+                            <span class="timeline-date">Apr 2017 - Apr 2019</span>
+                            <div class="institute-logo">
+                                <img src="images/Sap_jpg.jpg" alt="Kendriya Vidyalaya">
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="institute">Sapience Edu Connect</p>
+                            <p class="specialization">Remote work</p>
+                            <ul class="achievements">
+                                <li>Designed promotional graphic contents, marketing posters and brand logo.</li>
+                                <li>Researched and developed user engaging marketing graphic contents for social media.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <br>
-     <!--   <div class="education-column">
-            <h3 class=" title">Interships</h3>
-            <div class="education-box">
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class="fa-solid fa-calendar-check"></i> 2016 - 2017</div>
-                        <h3>10th - CBSE</h3>
-                        <p>Kendriya vidyalaya Kannur</p>
+
+        <!-- Education Content -->
+        <div id="education" class="tab-content">
+            <div class="timeline">
+                <!-- M.Tech -->
+                <div class="timeline-item">
+                    <div class="timeline-badge">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3 class="left-align">M.Tech Computer Science & Engineering</h3>
+                            <span class="timeline-date">Sep 2023 - May 2025</span>
+                            <div class="institute-logo">
+                                <img src="images/duk.png" alt="Digital University Kerala">
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="institute">Digital University Kerala (formerly IIITMK)</p>
+                            <p class="specialization">Trivandrum, Kerala</p>
+                            <ul class="achievements">
+                                <li>Specialization in AI</li>
+                                <li>CGPA: 7.9</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class="fa-solid fa-calendar-check"></i> 2016 - 2017</div>
-                        <h3>10th - CBSE</h3>
-                        <p>Kendriya vidyalaya Kannur</p>
+
+                <!-- B.Tech -->
+                <div class="timeline-item">
+                    <div class="timeline-badge">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3 class="left-align">B.Tech Computer Science & Engineering</h3>
+                            <span class="timeline-date">Aug 2019 - Aug 2023</span>
+                            <div class="institute-logo">
+                                <img src="images/KTU.jpg" alt="VJEC">
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="institute">APJ Abdul Kalam Technological University</p>
+                            <p class="specialization">Kannur, Kerala</p>
+                            <ul class="achievements">
+                                <li>Vimal Jyothi Engineering College</li>
+                                <li>CGPA: 7.64</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="education-content">
-                    <div class="content">
-                        <div class="year"><i class="fa-solid fa-calendar-check"></i> 2016 - 2017</div>
-                        <h3>10th - CBSE</h3>
-                        <p>Kendriya vidyalaya Kannur</p>
+
+                <!-- 12th -->
+                <div class="timeline-item">
+                    <div class="timeline-badge">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3 class="left-align">12th CBSE (Computer Science)</h3>
+                            <span class="timeline-date">Apr 2017 - Apr 2019</span>
+                            <div class="institute-logo">
+                                <img src="images/KV.png" alt="Kendriya Vidyalaya">
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="institute">Kendriya Vidyalaya Kannur</p>
+                            <p class="specialization">Kannur, Kerala</p>
+                            <ul class="achievements">
+                                <li>Computer Science Branch</li>
+                                <li>Score: 78.2%</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
---------->
-
     </div>
-                
-
-               
-    </div>
-   
-</div>
 </div>
 
-
-<!--------------------------------------------------skills--------------------------------------->
-
-<div id ="skills">
+<section id="skills">
     <div class="container">
-        <h1 class="sub-title">My <span>Skills</span></h1>
-        <div class="row">
-            <div class="skills-col-1">
-        
-        <div class="skill-name"><i class="fa-solid fa-code"></i>  Programming Skills</div>
-        <div class="skillsection">
-            <div class="skill-name">C & C++</div>
-                <div class="skill-bar">
-                    <div class="skill-per" per="80%" style="max-width:80%"></div>
-                </div>
-            </div>
-  
-        <div class="skillsection">
-            <div class="skill-name">Python</div>
-                <div class="skill-bar">
-                    <div class="skill-per" per="70%" style="max-width:70%"></div>
-                </div>
-            </div>
-  
-        <div class="skillsection">
-            <div class="skill-name">Java</div>
-                <div class="skill-bar">
-                    <div class="skill-per" per="70%" style="max-width:70%"></div>
-                </div>
-            </div>
-
-        <div class="skillsection">
-            <div class="skill-name">SQL</div>
-                <div class="skill-bar">
-                    <div class="skill-per" per="80%" style="max-width:80%"></div>
-                </div>
-            </div>
-
-        <div class="skillsection">
-            <div class="skill-name">HTML</div>
-                <div class="skill-bar">
-                    <div class="skill-per" per="80%" style="max-width:80%"></div>
-                </div>
-            </div>
-            <div class="skillsection">
-                <div class="skill-name">CSS</div>
-                    <div class="skill-bar">
-                        <div class="skill-per" per="70%" style="max-width:70%"></div>
-                    </div>
-                </div>
-
-                </div>
-
-                <div class="skills-col-2">
-            <div class="skill-name"><i class="fa-solid fa-wrench"></i>  Tools / IDE</Tools></div>
-        <div class="skillsection">
-            <div class="skill-name">Microsoft Office</div>
-                <div class="skill-bar">
-                    <div class="skill-per" per="90%" style="max-width:90%"></div>
-                </div>
-            </div>
-            <div class="skillsection">
-                <div class="skill-name">Visual Studio Code</div>
-                    <div class="skill-bar">
-                        <div class="skill-per" per="80%" style="max-width:80%"></div>
-                    </div>
-                </div>
-                <div class="skillsection">
-                    <div class="skill-name">Android Studio</div>
-                        <div class="skill-bar">
-                            <div class="skill-per" per="70%" style="max-width:70%"></div>
-                        </div>
-                    </div>
-                    <div class="skillsection">
-                        <div class="skill-name">Photoshop</div>
-                            <div class="skill-bar">
-                                <div class="skill-per" per="60%" style="max-width:60%"></div>
-                            </div>
-                        </div>
-                        <div class="skillsection">
-                            <div class="skill-name">Canva</div>
-                                <div class="skill-bar">
-                                    <div class="skill-per" per="90%" style="max-width:90%"></div>
-                                </div>
-                            </div>
-        </div>    
+        <div class="section-header">
+            <h1>My <span>Skills</span></h1>
+            <p>A visual representation of my technical skills and tools I work with, categorized for easy reference.</p>
         </div>
-        
+
+        <!-- Skills Filter -->
+        <div class="skills-filter">
+            <button class="filter-btn active" data-filter="all">All Skills</button>
+            <button class="filter-btn" data-filter="programming">Programming</button>
+            <button class="filter-btn" data-filter="tools">Tools & IDE</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+            <!-- Programming Skills -->
+            <div class="skill-category" data-category="programming">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h2 class="category-title">Programming Languages</h2>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="50"></div>
+                    </div>
+                    <div class="skill-tooltip">Description</div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">C</span>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="70"></div>
+                    </div>
+                    <div class="skill-tooltip">Description</div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Java</span>
+                        <span class="skill-percent">50%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="70"></div>
+                    </div>
+                    <div class="skill-tooltip">Android development and enterprise applications</div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">SQL</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="80"></div>
+                    </div>
+                    <div class="skill-tooltip">Database design, queries, and optimization</div>
+                </div>
+            </div>
+            
+            <!--Web Development-->
+
+            <div class="skill-category" data-category="programming">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h2 class="category-title">Web Development</h2>
+                </div>
+                
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="80"></div>
+                    </div>
+                    <div class="skill-tooltip">Semantic HTML5 and accessibility standards</div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="70"></div>
+                    </div>
+                    <div class="skill-tooltip">Modern layouts, animations, and responsive design</div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percent">60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="70"></div>
+                    </div>
+                    <div class="skill-tooltip">Web app design and fuctionalities.</div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">ReactJS</span>
+                        <span class="skill-percent">60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="70"></div>
+                    </div>
+                    <div class="skill-tooltip">Web app design and fuctionalities.</div>
+                </div>
+            </div>
+
+            <!-- Tools & IDE -->
+            <div class="skill-category" data-category="ML/DL">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h2 class="category-title">Machine Learning & Deep Learning</h2>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">PyTorch</span>
+                        <span class="skill-percent">36%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="36"></div>
+                    </div>
+                    <div class="skill-tooltip">Word, Excel, PowerPoint basics</div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Scikit-learn</span>
+                        <span class="skill-percent">36%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="36"></div>
+                    </div>
+                    <div class="skill-tooltip">Primary code editor with extensions</div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">HuggingFace</span>
+                        <span class="skill-percent">79%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="79"></div>
+                    </div>
+                    <div class="skill-tooltip">Android app development environment</div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">TensorFlow</span>
+                        <span class="skill-percent">79%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="79"></div>
+                    </div>
+                    <div class="skill-tooltip">Android app development environment</div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">OpenCV</span>
+                        <span class="skill-percent">79%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="79"></div>
+                    </div>
+                    <div class="skill-tooltip">Android app development environment</div>
+                </div>
+            </div>
+
+            <!-- Data Science Skills -->
+            <div class="skill-category" data-category="Data Science">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h2 class="category-title">Data Science & Analytics</h2>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">NumPy</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="80"></div>
+                    </div>
+                    <div class="skill-tooltip">Photo editing and graphic design</div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Pandas</span>
+                        <span class="skill-percent">86%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="86"></div>
+                    </div>
+                    <div class="skill-tooltip">Quick social media graphics and presentations</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Matplotlib</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="80"></div>
+                    </div>
+                    <div class="skill-tooltip">Photo editing and graphic design</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Seaborn</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="80"></div>
+                    </div>
+                    <div class="skill-tooltip">Photo editing and graphic design</div>
+                </div>
+            </div>
+
+            <!-- Other Tools Skills -->
+            <div class="skill-category" data-category="Other Tools">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h2 class="category-title">Other Tools</h2>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">VS Code</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="80"></div>
+                    </div>
+                    <div class="skill-tooltip">Photo editing and graphic design</div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">MS Office</span>
+                        <span class="skill-percent">86%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="86"></div>
+                    </div>
+                    <div class="skill-tooltip">Quick social media graphics and presentations</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Canva</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="80"></div>
+                    </div>
+                    <div class="skill-tooltip">Photo editing and graphic design</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Jupyter Notebook</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="80"></div>
+                    </div>
+                    <div class="skill-tooltip">Photo editing and graphic design</div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skill-category" data-category="Soft Skills">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h2 class="category-title">Soft Skills</h2>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Leadership</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="80"></div>
+                    </div>
+                    <div class="skill-tooltip">Photo editing and graphic design</div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Problem Solving</span>
+                        <span class="skill-percent">86%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="86"></div>
+                    </div>
+                    <div class="skill-tooltip">Quick social media graphics and presentations</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Creative Thinking</span>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="80"></div>
+                    </div>
+                    <div class="skill-tooltip">Photo editing and graphic design</div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span class="skill-name">Teamwork</span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percent="80"></div>
+                    </div>
+                    <div class="skill-tooltip">Photo editing and graphic design</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-------------------------Achivments -------------------------------->
+
+<!-- Add after services section -->
+<div id="achievements">
+    <div class="container">
+        <h1 class="sub-title">Certifications & <span>Achievements</span></h1>
+        <div class="achievements-list">
+            <div class="achievement">
+                <i class="fa-solid fa-trophy"></i>
+                <h2>1st Prize - Business Model Competition</h2>
+                <p>Digital University Kerala | May 2024</p>
+            </div>
+            <div class="achievement">
+                <i class="fa-solid fa-certificate"></i>
+                <h2>Deloitte Virtual Experience Program</h2>
+                <p>Forage Platform | November 2022</p>
+                <a href="#" class="btn">View Certificate</a>
+            </div>
+            <!-- Add more achievements as needed -->
+        </div>
+    </div>
+</div>
+
+<!-------------------------------------Roles------------------------------------------->
+
+<!-- Add after achievements section -->
+<div id="responsibilities">
+    <div class="container">
+        <h1 class="sub-title">Positions of <span>Responsibility</span></h1>
+        <div class="roles-list">
+            <div class="role">
+                <i class="fa-solid fa-chess-queen"></i>
+                <h2>Chief Creative Officer</h2>
+                <h3>Innovation Club, Digital University Kerala</h3>
+                <p>2024 - Present</p>
+            </div>
+            <div class="role">
+                <i class="fa-solid fa-film"></i>
+                <h2>Secretary, CleanCut Cinemas</h2>
+                <h3>Film Club, Digital University Kerala</h3>
+                <p>2024 - Present</p>
+            </div>
+            <div class="role">
+                <i class="fa-solid fa-users-gear"></i>
+                <h2>Design Team Head</h2>
+                <h3>Vyuham'24 Techfest, Digital University Kerala</h3>
+                <p>2024</p>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -289,79 +716,292 @@
 
     <!------------------------------------------------Portfolio---------------------------------------->
 
-    <div id="portfolio">
+    <div id="projects">
         <div class="container">
-            <h1 class="sub-title">My <span>Projects</span></h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png" alt="">
-                    <div class="layer">
-                        <h3>Morse Code Gesture Translator(MCGT)</h3>
-                        <p>MCGT is a terminal based python application that converts finger morse in to English alphabets.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            <h1 class="section-title">My <span>Projects</span></h1>
+            <div class="animated-divider">
+                <div class="divider-line"></div>
+                <div class="divider-dot"></div>
+            </div>
+    
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="android">Android</button>
+                <button class="filter-btn" data-filter="writing">Writing</button>
+            </div>
+    
+            <div class="projects-grid">
+                <!-- MCGT Project -->
+                <div class="project-card" data-category="android">
+                    <div class="project-image">
+                        <img src="images/work-1.png" alt="MCGT Project Demo">
+                        <div class="project-links">
+                            <a href="#" class="demo-link" aria-label="Live Demo">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="#" class="code-link" aria-label="View Code">
+                                <i class="fas fa-code"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">Featured</div>
+                        <h3>MCGT - Morse Code Gesture Translator</h3>
+                        <p class="project-description">A terminal-based Python application that converts finger Morse code into English alphabets using computer vision.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="projects.html#mcgt" class="project-btn">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="project-stats">
+                                <span><i class="fas fa-star"></i> 24</span>
+                                <span><i class="fas fa-code-branch"></i> 8</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/work-2.png" alt="">
-                    <div class="layer">
-                        <h3>PryMe</h3>
-                        <p>A privacy focused Social Media Application developed using Java, python and HTML.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+
+                <!------------Pyme----------------->
+
+                <div class="project-card" data-category="android">
+                    <div class="project-image">
+                        <img src="images/work-2.png" alt="MCGT Project Demo">
+                        <div class="project-links">
+                            <a href="#" class="demo-link" aria-label="Live Demo">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="#" class="code-link" aria-label="View Code">
+                                <i class="fas fa-code"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">Featured</div>
+                        <h3>PryMe - Privacy Focused Social Media Application</h3>
+                        <p class="project-description">A privacy-focused social media platform with end-to-end encryption for all communications and anonymous posting options, giving users complete control over their data.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>XML</span>
+                            <span>Face Recognition</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="projects.html#mcgt" class="project-btn">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="project-stats">
+                                <span><i class="fas fa-star"></i> 24</span>
+                                <span><i class="fas fa-code-branch"></i> 8</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/work-3.png" alt="">
-                    <div class="layer">
-                        <h3>Solor System Simulation</h3>
-                        <p>A simple guided project which simulate the orbits of different planets around the sun using real astronomical values.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+    
+                <!-- Web Development Project -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="images/web-project.jpg" alt="Web Project">
+                        <div class="project-links">
+                            <a href="#" class="demo-link" aria-label="Live Demo">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                            <a href="#" class="code-link" aria-label="View Code">
+                                <i class="fas fa-code"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p class="project-description">A responsive portfolio website built with modern CSS techniques and JavaScript animations.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="projects.html#web" class="project-btn">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="project-stats">
+                                <span><i class="fas fa-star"></i> 18</span>
+                                <span><i class="fas fa-code-branch"></i> 5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Design Project -->
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="images/design-project.jpg" alt="Design Project">
+                        <div class="project-links">
+                            <a href="#" class="demo-link" aria-label="View Design">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Brand Identity Design</h3>
+                        <p class="project-description">Complete brand identity package including logo, color scheme, and marketing materials.</p>
+                        <div class="project-tech">
+                            <span>Photoshop</span>
+                            <span>Illustrator</span>
+                            <span>Branding</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="projects.html#design" class="project-btn">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="project-stats">
+                                <span><i class="fas fa-heart"></i> 32</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Writing Project -->
+                <div class="project-card" data-category="writing">
+                    <div class="project-image">
+                        <img src="images/writing-project.jpg" alt="Writing Project">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">New</div>
+                        <h3>Technical Blog Series</h3>
+                        <p class="project-description">A 12-part series on modern web development techniques published on Medium.</p>
+                        <div class="project-tech">
+                            <span>Technical Writing</span>
+                            <span>Markdown</span>
+                            <span>Research</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="projects.html#writing" class="project-btn">
+                                Read Articles <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="project-stats">
+                                <span><i class="fas fa-book-reader"></i> 1.2K</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>
+    
+            <div class="view-more">
+                <a href="projects.html" class="view-more-btn">
+                    See More Projects <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
         </div>
     </div>
 
 <!-------------------------------------------------Contact------------------------------------------->    
 
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact <span>Me</span></h1>
-                    <p> <i class="fa-solid fa-envelope"></i> akshaysasi12.knr@gmail.com</p>
-                    <p> <i class="fa-solid fa-phone"></i> +91 8304912440</p>
-                    <div class="social-icons">
-                        <a href="https://twitter.com/_Aks_haY_"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/ak__sky/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/akshay-sasi/"><i class="fa-brands fa-linkedin"></i></a>
-
+<div id="contact">
+    <div class="container-a">
+        <div class="contact-container">
+            <!-- Left Column - Contact Info -->
+            <div class="contact-info">
+                <h1 class="section-title">Get In <span>Touch</span></h1>
+                <p class="contact-subtitle">Let's collaborate on your next project or just say hello!</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <a href="mailto:akshaysasi12.km@gmail.com">akshaysasi12.km@gmail.com</a>
+                        </div>
                     </div>
-                    <a href="images/AKSHAY SASI RESUME.pdf" download class="btn btn2">Download CV</a>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <a href="tel:+918304912440">+91 8304912440</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Kannur, Kerala, India</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
+                
+                <div class="social-links">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/akshay-sasi" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/yourusername" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/_Aks_haY_" target="_blank" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/ak__sky" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
+            
+            <!-- Right Column - Contact Form -->
+            <div class="contact-form">
+                <h2>Send Me a Message</h2>
+                <form id="contactForm" class="form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required minlength="2">
+                        <label for="name">Your Name</label>
+                        <div class="underline"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                        <div class="underline"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+                        <label for="message">Your Message</label>
+                        <div class="underline"></div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                
+                <div id="formStatus"></div>
+            </div>
         </div>
-
-        <div class="copyright">
-            <p>Copyright © Made with <i class="fa-solid fa-heart"></i> by Akshay Sasi</p>
-        </div>
-
     </div>
+    
+    <div class="copyright">
+        <p>Copyright © <span id="currentYear"></span> Akshay Sasi. All rights reserved.</p>
+    </div>
+</div>
 
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname){
+        function opentab(tabname, event) {
             for(tablink of tablinks){
                 tablink.classList.remove("active-link");
             }
@@ -385,25 +1025,309 @@
         }
 
     </script>
+<!-- 
+    <script>
+        // Initialize skill bars
+        document.addEventListener('DOMContentLoaded', function() {
+            const skillBars = document.querySelectorAll('.skill-per');
+            skillBars.forEach(skillBar => {
+                const percentage = skillBar.getAttribute('per');
+                skillBar.style.setProperty('--per', percentage);
+            });
+
+            // Add intersection observer for animation trigger
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'none';
+                        entry.target.offsetHeight; // Trigger reflow
+                        entry.target.style.animation = 'fillBars 1.5s ease-in-out forwards';
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            skillBars.forEach(skillBar => observer.observe(skillBar));
+        });
+    </script> -->
+
+    <script>
+  
+        function openTab(tabName) {
+    // Hide all tab contents
+    const tabContents = document.getElementsByClassName("tab-content");
+    for (let i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove("active-tab");
+    }
+    
+    // Remove active class from all buttons
+    const tabButtons = document.getElementsByClassName("tab-btn");
+    for (let i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove("active");
+    }
+    
+    // Show current tab and mark button as active
+    document.getElementById(tabName).classList.add("active-tab");
+    event.currentTarget.classList.add("active");
+}
+
+
+      </script>
+            <script>
+
+function doPost(e) {
+    try {
+      const sheet = SpreadsheetApp.openById('1ZZjHrKw7ZjMmTK0igkWu27x3gaObEgh-PsRmZV8SMP4').getSheetByName('Sheet1');
+      if (!e.postData || !e.postData.contents) {
+        throw new Error('No data received');
+      }
+      
+      const data = JSON.parse(e.postData.contents);
+      
+      // Validate required fields
+      if (!data.name || !data.email || !data.message) {
+        throw new Error('Missing required fields');
+      }
+      
+      // Validate email format
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
+        throw new Error('Invalid email format');
+      }
+      
+      const row = [
+        new Date(),
+        data.name,
+        data.email,
+        data.message
+      ];
+      
+      sheet.appendRow(row);
+      
+      // Send email notification
+      MailApp.sendEmail({
+        to: "akshaysasi12.km@gmail.com",
+        subject: "New Contact Form Submission",
+        body: `Name: ${data.name}\nEmail: ${data.email}\nMessage: ${data.message}`
+      });
+      
+      return ContentService.createTextOutput(JSON.stringify({
+        result: 'success',
+        message: 'Data saved successfully'
+      })).setMimeType(ContentService.MimeType.JSON);
+        
+    } catch (error) {
+      return ContentService.createTextOutput(JSON.stringify({
+        result: 'error',
+        message: error.message
+      })).setMimeType(ContentService.MimeType.JSON);
+    }
+  }
+  
+  // Add this to handle CORS preflight requests
+  function doGet() {
+    return ContentService.createTextOutput(JSON.stringify({status: 'running'}))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+</script>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const form = e.target;
+        const status = document.getElementById('formStatus');
+        const submitBtn = form.querySelector('button[type="submit"]');
+        
+        // Change button state
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        status.style.display = 'none';
+        
+        // Prepare form data
+        const formData = {
+            name: form.name.value.trim(),
+            email: form.email.value.trim(),
+            message: form.message.value.trim()
+        };
+        
+        try {
+            const response = await fetch('https://script.google.com/macros/s/AKfycbyz5od7oMH_s7-n4cjDP3T-n46yt6GfdYiAyQE-PTTc9BfbreFXqZx9PUzYmTdcIROFJA/exec', {
+                method: 'POST',
+                body: JSON.stringify(formData),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
+            
+            const data = await response.json();
+            
+            if (!response.ok || data.result !== 'success') {
+                throw new Error(data.message || 'Failed to send message');
+            }
+            
+            showStatus('Message sent successfully! I\'ll get back to you soon.', 'success');
+            form.reset();
+        } catch (error) {
+            console.error('Error:', error);
+            showStatus(error.message || 'Error sending message. Please try again later.', 'error');
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<span>Send Message</span><i class="fas fa-paper-plane"></i>';
+        }
+        
+        function showStatus(message, type) {
+            status.style.display = 'block';
+            status.textContent = message;
+            status.style.color = type === 'success' ? '#4CAF50' : '#f44336';
+            status.style.backgroundColor = type === 'success' 
+                ? 'rgba(76, 175, 80, 0.1)' 
+                : 'rgba(244, 67, 54, 0.1)';
+            
+            setTimeout(() => {
+                status.style.display = 'none';
+            }, 5000);
+        }
+    });
+    </script>
 
 <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzFlNdsH5xF_GjipdZTjuU8H1JnioRhb7gbNBYodM65-OlRnUVcOZc_zQhZRPUu_uIccg/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message Sent Successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    // Filter projects
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filterValue = this.getAttribute('data-filter');
+                
+                // Filter projects
+                projectCards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.style.display = 'block';
+                        card.style.animation = 'fadeIn 0.5s ease forwards';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    });
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const typingText = document.querySelector('.typing-text');
+        const cursor = document.querySelector('.cursor');
+        const designations = ["AI Engineer", "Researcher", "Graphic Designer"];
+        let currentDesignation = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = 150; // milliseconds
+        
+        function type() {
+            const fullText = designations[currentDesignation];
+            
+            if (isDeleting) {
+                // Deleting text
+                typingText.textContent = fullText.substring(0, charIndex - 1);
+                charIndex--;
+                typingSpeed = 50; // Faster when deleting
+            } else {
+                // Typing text
+                typingText.textContent = fullText.substring(0, charIndex + 1);
+                charIndex++;
+                typingSpeed = 150;
+            }
+            
+            // Check if current designation is complete
+            if (!isDeleting && charIndex === fullText.length) {
+                // Pause at end of text
+                typingSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                // Move to next designation
+                isDeleting = false;
+                currentDesignation = (currentDesignation + 1) % designations.length;
+                typingSpeed = 500; // Pause before typing next
+            }
+            
+            setTimeout(type, typingSpeed);
+        }
+        
+        // Start the typing animation after a short delay
+        setTimeout(type, 1000);
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Animate progress bars on scroll
+        const progressBars = document.querySelectorAll('.progress-fill');
+        
+        const animateProgressBars = () => {
+            progressBars.forEach(bar => {
+                const percent = bar.getAttribute('data-percent');
+                bar.style.width = percent + '%';
+            });
+        };
+        
+        // Intersection Observer for progress bars
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateProgressBars();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        document.querySelectorAll('.skill-category').forEach(category => {
+            observer.observe(category);
+        });
+        
+        // Skills filtering functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filterValue = this.getAttribute('data-filter');
+                const skillCategories = document.querySelectorAll('.skill-category');
+                
+                // Filter skills
+                skillCategories.forEach(category => {
+                    const categoryType = category.getAttribute('data-category');
+                    
+                    if (filterValue === 'all' || categoryType === filterValue) {
+                        category.style.display = 'block';
+                    } else {
+                        category.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Position tooltips dynamically
+        const skillItems = document.querySelectorAll('.skill-item');
+        
+        skillItems.forEach(item => {
+            const tooltip = item.querySelector('.skill-tooltip');
+            const progressBar = item.querySelector('.progress-bar');
+            
+            item.addEventListener('mousemove', (e) => {
+                const rect = progressBar.getBoundingClientRect();
+                tooltip.style.left = `${e.clientX - rect.left}px`;
+                tooltip.style.top = `${rect.top - 40}px`;
+            });
+        });
+    });
+</script>
+      
     
 </body>
 </html>

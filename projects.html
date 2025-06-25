@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #005dd8;
+            --primary-light: rgba(0, 93, 216, 0.1);
+            --primary-dark: #004bb7;
+            --bg-dark: #0f0f0f;
+            --bg-darker: #0a0a0a;
+            --bg-card: #1a1a1a;
+            --text-light: #d9d9d9;
+            --text-lighter: #ffffff;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            --shadow-hover: 0 15px 40px rgba(0, 93, 216, 0.3);
+            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: var(--bg-dark);
+            color: var(--text-light);
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        #header {
+            background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-dark) 100%);
+            min-height: 10vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgwLDkzLDIxNiwwLjAzKSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3QgZmlsbD0idXJsKCNwYXR0ZXJuKSIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIvPjwvc3ZnPg==');
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+            transition: var(--transition);
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            position: relative;
+            padding: 5px 0;
+            transition: var(--transition);
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+
+        nav ul li a:hover {
+            color: var(--text-lighter);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .fa-bars, .fa-circle-xmark {
+            font-size: 1.5rem;
+            color: var(--text-light);
+            cursor: pointer;
+            display: none;
+            transition: var(--transition);
+        }
+
+        .fa-bars:hover, .fa-circle-xmark:hover {
+            color: var(--primary);
+        }
+
+        .header-text {
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .header-text h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, var(--text-lighter) 70%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: fadeInDown 1s ease;
+        }
+
+        .header-text p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+            animation: fadeIn 1.5s ease;
+        }
+
+        /* Projects Section */
+        #projects {
+            padding: 100px 0;
+            background: var(--bg-dark);
+            position: relative;
+        }
+
+        .project-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .project-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, var(--text-lighter) 70%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            position: relative;
+            display: inline-block;
+        }
+
+        .project-header h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .project-header p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Filter Controls */
+        .filter-controls {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+
+        .filter-btn {
+            padding: 10px 25px;
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .filter-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: var(--primary);
+            z-index: -1;
+            transition: var(--transition);
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            color: var(--text-lighter);
+        }
+
+        .filter-btn:hover::before, .filter-btn.active::before {
+            width: 100%;
+        }
+
+        /* Project Grid */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .project-item {
+            background: var(--bg-card);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            opacity: 0;
+            transform: translateY(30px);
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .project-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .project-item:hover {
+            transform: translateY(-10px) !important;
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary);
+        }
+
+        .project-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 93, 216, 0.1) 0%, transparent 100%);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .project-item:hover::before {
+            opacity: 1;
+        }
+
+        .project-content {
+            padding: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            box-shadow: 0 5px 15px rgba(0, 93, 216, 0.3);
+        }
+
+        .project-title {
+            font-size: 1.8rem;
+            color: var(--text-lighter);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+            transition: var(--transition);
+        }
+
+        .project-title:hover {
+            color: var(--primary);
+        }
+
+        .project-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+
+        .project-item:hover .project-title::after {
+            width: 70px;
+        }
+
+        .project-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        .project-type, .project-team, .project-date {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-light);
+        }
+
+        .project-type i, .project-team i, .project-date i {
+            color: var(--primary);
+            font-size: 1rem;
+        }
+
+        .project-image {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            aspect-ratio: 16/9;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 50%);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .project-item:hover .project-image::after {
+            opacity: 1;
+        }
+
+        .project-image:hover img {
+            transform: scale(1.1);
+        }
+
+        .project-description {
+            margin-bottom: 25px;
+            line-height: 1.7;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tech-tags span {
+            background: rgba(0, 93, 216, 0.2);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            transition: var(--transition);
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .tech-tags span:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 93, 216, 0.3);
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 25px;
+            background: var(--primary);
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: var(--transition);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .project-link:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 93, 216, 0.3);
+        }
+
+        .project-link.secondary {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .project-link.secondary:hover {
+            background: var(--primary-light);
+        }
+
+        /* Project Details Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-container {
+            background: var(--bg-card);
+            border-radius: 15px;
+            width: 90%;
+            max-width: 1000px;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 40px;
+            position: relative;
+            transform: translateY(50px);
+            transition: all 0.3s ease;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .modal-overlay.active .modal-container {
+            transform: translateY(0);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 1.5rem;
+            color: var(--text-light);
+            cursor: pointer;
+            transition: var(--transition);
+            background: rgba(255, 255, 255, 0.1);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+        .close-modal:hover {
+            color: var(--primary);
+            transform: rotate(90deg);
+        }
+
+        .modal-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .modal-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .modal-details h2 {
+            font-size: 2.2rem;
+            color: var(--text-lighter);
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .modal-details h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--primary);
+        }
+
+        .modal-description {
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        .modal-features {
+            margin-bottom: 25px;
+        }
+
+        .modal-features h3, .modal-challenges h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .modal-features ul {
+            list-style-position: inside;
+            margin-bottom: 20px;
+        }
+
+        .modal-features li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .modal-features li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+
+        .modal-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        /* No Projects Message */
+        .no-projects {
+            text-align: center;
+            grid-column: 1 / -1;
+            padding: 50px 0;
+            display: none;
+        }
+
+        .no-projects i {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .no-projects h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--text-lighter);
+        }
+
+        .no-projects p {
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .copyright {
+            text-align: center;
+            padding: 30px 0;
+            background: var(--bg-darker);
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .copyright i {
+            color: var(--primary);
+            margin: 0 5px;
+        }
+
+        /* Animations */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .modal-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .modal-image {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                position: fixed;
+                top: 0;
+                right: -200px;
+                width: 200px;
+                height: 100vh;
+                background: var(--bg-card);
+                flex-direction: column;
+                align-items: center;
+                padding-top: 80px;
+                transition: right 0.3s ease;
+                z-index: 100;
+            }
+            
+            nav ul.active {
+                right: 0;
+            }
+            
+            .fa-bars, .fa-circle-xmark {
+                display: block;
+            }
+            
+            .header-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .project-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .filter-controls {
+                gap: 10px;
+            }
+            
+            .filter-btn {
+                padding: 8px 15px;
+                font-size: 0.8rem;
+            }
+            
+            .project-links {
+                flex-direction: column;
+            }
+            
+            .project-link {
+                justify-content: center;
+            }
+            
+            .modal-container {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="container">
+            <div class="project-header">
+                <h1>Project <span>Portfolio</span></h1>
+                <p>Explore my technical projects with detailed descriptions, technologies used, and team collaborations. Filter by category to find specific projects.</p>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+                <button class="filter-btn" data-filter="web-development">Web Development</button>
+                <button class="filter-btn" data-filter="mobile-app">Mobile App</button>
+                <button class="filter-btn" data-filter="education">Educational</button>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="project-grid">
+                <!-- Project 1 - Morse Code Gesture Translator -->
+                <div class="project-item" data-categories="machine-learning">
+                    <div class="project-badge">Featured</div>
+                    <div class="project-content">
+                        <h2 class="project-title">Unveiling the Heart-Brain Connection: An Analysis of HRV in Cognitive Performance</h2>
+                        
+                        <div class="project-meta">
+                            <div class="project-type">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>Thesis Project</span>
+                            </div>
+                            <div class="project-team">
+                                <i class="fas fa-user"></i>
+                                <span>Individual</span>
+                            </div>
+                            <div class="project-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>May 2025</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-image">
+                            <img src="images/work-1.png" alt="MCGT Project Demo">
+                        </div>
+                        
+                        <div class="project-description">
+                            <p>A multimodal cognitive load classifier using ECG (HRV, Catch22) and EEG data, achieving 92% accuracy in non-invasive mental state monitoring with Python, Neurokit2, and PyTorch.</p>
+                        </div>
+                        
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>Neurokit2</span>
+                            <span>MNE</span>
+                            <span>Scikit-learn</span>
+                            <span>PyTorch</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="project-link view-details" data-project="1">
+                                <i class="fas fa-eye"></i> View Details
+                            </a>
+                            <a href="https://github.com/yourusername/mcgt" class="project-link secondary" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                       <!-- Project 2 - MCA -->
+                       <div class="project-item" data-categories="mobile-app web-development">
+                        <div class="project-content">
+                            <h2 class="project-title">Texture-Based Food Contamination Detection Framework in Agricultural Products</h2>
+                            
+                            <div class="project-meta">
+                                <div class="project-type">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span>Mobile App</span>
+                                </div>
+                                <div class="project-team">
+                                    <i class="fas fa-users"></i>
+                                    <span>Team (2)</span>
+                                </div>
+                                <div class="project-date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Dec 2022</span>
+                                </div>
+                            </div>
+                            
+                            <div class="project-image">
+                                <img src="images/work-2.png" alt="PryMe Screenshot">
+                            </div>
+                            
+                            <div class="project-description">
+                                <p>A computer vision-based framework for detecting food contamination in agricultural products using texture analysis and MCA.</p>
+                            </div>
+                            
+                            <div class="tech-tags">
+                                <span>React Native</span>
+                                <span>Spring Boot</span>
+                                <span>PostgreSQL</span>
+                                <span>AES-256</span>
+                            </div>
+                            
+                            <div class="project-links">
+                                <a href="#" class="project-link view-details" data-project="2">
+                                    <i class="fas fa-eye"></i> View Details
+                                </a>
+                                <a href="https://github.com/yourusername/pryme" class="project-link secondary" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Project 2 - PryMe -->
+                <div class="project-item" data-categories="mobile-app web-development">
+                    <div class="project-content">
+                        <h2 class="project-title">PryMe - Privacy Social Media</h2>
+                        
+                        <div class="project-meta">
+                            <div class="project-type">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Mobile App</span>
+                            </div>
+                            <div class="project-team">
+                                <i class="fas fa-users"></i>
+                                <span>Team (3)</span>
+                            </div>
+                            <div class="project-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Dec 2022</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-image">
+                            <img src="images/work-2.png" alt="PryMe Screenshot">
+                        </div>
+                        
+                        <div class="project-description">
+                            <p>A privacy-focused social media platform with end-to-end encryption for all communications and anonymous posting options, giving users complete control over their data.</p>
+                        </div>
+                        
+                        <div class="tech-tags">
+                            <span>React Native</span>
+                            <span>Spring Boot</span>
+                            <span>PostgreSQL</span>
+                            <span>AES-256</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="project-link view-details" data-project="2">
+                                <i class="fas fa-eye"></i> View Details
+                            </a>
+                            <a href="https://github.com/yourusername/pryme" class="project-link secondary" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-categories="machine-learning">
+                    <div class="project-badge">Featured</div>
+                    <div class="project-content">
+                        <h2 class="project-title">Morse Code Gesture Translator</h2>
+                        
+                        <div class="project-meta">
+                            <div class="project-type">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>Machine Learning</span>
+                            </div>
+                            <div class="project-team">
+                                <i class="fas fa-user"></i>
+                                <span>Individual</span>
+                            </div>
+                            <div class="project-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>June 2023</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-image">
+                            <img src="images/work-1.png" alt="MCGT Project Demo">
+                        </div>
+                        
+                        <div class="project-description">
+                            <p>An innovative terminal-based Python application that converts finger gestures representing Morse code into English alphabets in real-time using computer vision and machine learning.</p>
+                        </div>
+                        
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>NumPy</span>
+                            <span>Scikit-learn</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="project-link view-details" data-project="1">
+                                <i class="fas fa-eye"></i> View Details
+                            </a>
+                            <a href="https://github.com/yourusername/mcgt" class="project-link secondary" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - Solar System Simulation -->
+                <div class="project-item" data-categories="education">
+                    <div class="project-content">
+                        <h2 class="project-title">Solar System Simulation</h2>
+                        
+                        <div class="project-meta">
+                            <div class="project-type">
+                                <i class="fas fa-globe"></i>
+                                <span>Educational</span>
+                            </div>
+                            <div class="project-team">
+                                <i class="fas fa-user"></i>
+                                <span>Individual</span>
+                            </div>
+                            <div class="project-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Mar 2022</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-image">
+                            <img src="images/work-3.png" alt="Solar System Simulation">
+                        </div>
+                        
+                        <div class="project-description">
+                            <p>An accurate physics-based simulation of our solar system using real astronomical data from NASA, visualizing planetary orbits and relationships with scientifically precise parameters.</p>
+                        </div>
+                        
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>Pygame</span>
+                            <span>NASA API</span>
+                            <span>Matplotlib</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="project-link view-details" data-project="3">
+                                <i class="fas fa-eye"></i> View Details
+                            </a>
+                            <a href="https://github.com/yourusername/solar-system" class="project-link secondary" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 - E-commerce Dashboard -->
+                <div class="project-item" data-categories="web-development">
+                    <div class="project-badge">New</div>
+                    <div class="project-content">
+                        <h2 class="project-title">E-commerce Analytics Dashboard</h2>
+                        
+                        <div class="project-meta">
+                            <div class="project-type">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Web App</span>
+                            </div>
+                            <div class="project-team">
+                                <i class="fas fa-users"></i>
+                                <span>Team (2)</span>
+                            </div>
+                            <div class="project-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Jan 2024</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-image">
+                            <img src="images/work-4.png" alt="E-commerce Dashboard">
+                        </div>
+                        
+                        <div class="project-description">
+                            <p>A comprehensive analytics dashboard for e-commerce businesses with real-time sales tracking, customer behavior analysis, and inventory management features.</p>
+                        </div>
+                        
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Chart.js</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="project-link view-details" data-project="4">
+                                <i class="fas fa-eye"></i> View Details
+                            </a>
+                            <a href="https://github.com/yourusername/ecommerce-dashboard" class="project-link secondary" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 - Fitness Tracker App -->
+                <div class="project-item" data-categories="mobile-app machine-learning">
+                    <div class="project-content">
+                        <h2 class="project-title">AI Fitness Tracker</h2>
+                        
+                        <div class="project-meta">
+                            <div class="project-type">
+                                <i class="fas fa-running"></i>
+                                <span>Mobile App</span>
+                            </div>
+                            <div class="project-team">
+                                <i class="fas fa-user"></i>
+                                <span>Individual</span>
+                            </div>
+                            <div class="project-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Aug 2023</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-image">
+                            <img src="images/work-5.png" alt="Fitness Tracker App">
+                        </div>
+                        
+                        <div class="project-description">
+                            <p>A mobile application that uses machine learning to analyze workout form and provide real-time feedback, with personalized training plans and progress tracking.</p>
+                        </div>
+                        
+                        <div class="tech-tags">
+                            <span>Flutter</span>
+                            <span>TensorFlow Lite</span>
+                            <span>Firebase</span>
+                            <span>Dart</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="project-link view-details" data-project="5">
+                                <i class="fas fa-eye"></i> View Details
+                            </a>
+                            <a href="https://github.com/yourusername/fitness-tracker" class="project-link secondary" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 - CodeCollab -->
+                <div class="project-item" data-categories="web-development">
+                    <div class="project-content">
+                        <h2 class="project-title">CodeCollab</h2>
+                        
+                        <div class="project-meta">
+                            <div class="project-type">
+                                <i class="fas fa-code"></i>
+                                <span>Web App</span>
+                            </div>
+                            <div class="project-team">
+                                <i class="fas fa-users"></i>
+                                <span>Team (4)</span>
+                            </div>
+                            <div class="project-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>May 2023</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-image">
+                            <img src="images/work-6.png" alt="CodeCollab Screenshot">
+                        </div>
+                        
+                        <div class="project-description">
+                            <p>A real-time collaborative code editor with video chat functionality, designed for remote pair programming and technical interviews.</p>
+                        </div>
+                        
+                        <div class="tech-tags">
+                            <span>React</span>
+                            <span>WebSockets</span>
+                            <span>Node.js</span>
+                            <span>WebRTC</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="project-link view-details" data-project="6">
+                                <i class="fas fa-eye"></i> View Details
+                            </a>
+                            <a href="https://github.com/yourusername/codecollab" class="project-link secondary" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Projects Message -->
+            <div class="no-projects">
+                <i class="fas fa-folder-open"></i>
+                <h3>No Projects Found</h3>
+                <p>There are no projects in this category. Try selecting a different filter or check back later for new additions.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Details Modals -->
+    <div class="modal-overlay" id="modal-1">
+        <div class="modal-container">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img src="images/work-1.png" alt="MCGT Project">
+                </div>
+                <div class="modal-details">
+                    <h2>Unveiling the Heart-Brain Connection: An Analysis of HRV in Cognitive Performance</h2>
+                    <div class="modal-description">
+                        <p>MCGT is an innovative terminal-based Python application that converts finger gestures representing Morse code into English alphabets in real-time. Designed with accessibility in mind, this project helps bridge communication gaps through computer vision and machine learning.</p>
+                    </div>
+                    
+                    <div class="modal-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Real-time gesture recognition with 95% accuracy</li>
+                            <li>Customizable sensitivity settings for different users</li>
+                            <li>Multi-user support with profile saving</li>
+                            <li>Export translation history for analysis</li>
+                            <li>Interactive tutorial mode for learning Morse code</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-tags">
+                        <span>Python 3.8</span>
+                        <span>OpenCV</span>
+                        <span>NumPy</span>
+                        <span>Pandas</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                    
+                    <div class="modal-challenges">
+                        <h3>Challenges & Solutions</h3>
+                        <p>Developing robust gesture recognition required extensive testing with different lighting conditions and hand sizes. The biggest challenge was minimizing false positives while maintaining real-time performance. This was solved by implementing a dual-validation system that cross-checks gestures with temporal patterns.</p>
+                    </div>
+                    
+                    <div class="modal-links">
+                        <a href="https://github.com/yourusername/mcgt" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> View Source Code
+                        </a>
+                        <a href="MCGT-Documentation.pdf" class="project-link secondary" download>
+                            <i class="fas fa-file-pdf"></i> Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-2">
+        <div class="modal-container">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img src="images/work-2.png" alt="PryMe Project">
+                </div>
+                <div class="modal-details">
+                    <h2>PryMe - Privacy Focused Social Media</h2>
+                    <div class="modal-description">
+                        <p>PryMe is a privacy-focused social media platform designed to give users complete control over their data. Featuring end-to-end encryption for all communications and anonymous posting options, PryMe redefines what social networking can be without compromising user privacy.</p>
+                    </div>
+                    
+                    <div class="modal-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>End-to-end encrypted messaging</li>
+                            <li>Anonymous posting with pseudonyms</li>
+                            <li>Data minimization architecture</li>
+                            <li>Self-destructing messages</li>
+                            <li>Secure video calling</li>
+                            <li>Onion routing for metadata protection</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-tags">
+                        <span>Java Spring Boot</span>
+                        <span>React Native</span>
+                        <span>PostgreSQL</span>
+                        <span>AES-256 Encryption</span>
+                        <span>Firebase</span>
+                        <span>WebRTC</span>
+                    </div>
+                    
+                    <div class="modal-challenges">
+                        <h3>Team Members</h3>
+                        <div class="project-meta">
+                            <div class="team-member">
+                                <div class="member-avatar">
+                                    <img src="images/avatar1.jpg" alt="Team Member">
+                                </div>
+                                <span class="member-name">Akshay Sasi (Team Lead)</span>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-avatar">
+                                    <img src="images/avatar2.jpg" alt="Team Member">
+                                </div>
+                                <span class="member-name">Rahul Kumar (Backend)</span>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-avatar">
+                                    <img src="images/avatar3.jpg" alt="Team Member">
+                                </div>
+                                <span class="member-name">Priya Sharma (UI/UX)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-links">
+                        <a href="https://github.com/yourusername/pryme" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> View Source Code
+                        </a>
+                        <a href="pryme-demo.html" class="project-link secondary">
+                            <i class="fas fa-play-circle"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-3">
+        <div class="modal-container">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img src="images/work-3.png" alt="Solar System Project">
+                </div>
+                <div class="modal-details">
+                    <h2>Solar System Simulation</h2>
+                    <div class="modal-description">
+                        <p>An accurate physics-based simulation of our solar system using real astronomical data from NASA. This educational tool visualizes planetary orbits, scales, and relationships with scientifically precise parameters, making astronomy accessible to students and enthusiasts.</p>
+                    </div>
+                    
+                    <div class="modal-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Accurate orbital mechanics with real astronomical data</li>
+                            <li>Adjustable time scale (1 second = 1 day to 1 year)</li>
+                            <li>Educational information panels for each celestial body</li>
+                            <li>Scale visualization options (logarithmic/linear)</li>
+                            <li>Eclipse and planetary alignment simulations</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Pygame</span>
+                        <span>NASA API</span>
+                        <span>Matplotlib</span>
+                        <span>NumPy</span>
+                    </div>
+                    
+                    <div class="modal-challenges">
+                        <h3>Educational Impact</h3>
+                        <p>This simulation has been adopted by three local schools for their astronomy programs. Teachers report a 40% improvement in student comprehension of orbital mechanics concepts compared to traditional teaching methods.</p>
+                    </div>
+                    
+                    <div class="modal-links">
+                        <a href="https://github.com/yourusername/solar-system" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> View Source Code
+                        </a>
+                        <a href="solar-demo.html" class="project-link secondary">
+                            <i class="fas fa-play-circle"></i> Live Demo
+                        </a>
+                        <a href="Solar-System-Lesson-Plans.pdf" class="project-link secondary" download>
+                            <i class="fas fa-book"></i> Lesson Plans
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-4">
+        <div class="modal-container">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img src="images/work-4.png" alt="E-commerce Dashboard">
+                </div>
+                <div class="modal-details">
+                    <h2>E-commerce Analytics Dashboard</h2>
+                    <div class="modal-description">
+                        <p>A comprehensive analytics dashboard for e-commerce businesses with real-time sales tracking, customer behavior analysis, and inventory management features. The dashboard provides actionable insights through intuitive visualizations.</p>
+                    </div>
+                    
+                    <div class="modal-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Real-time sales and revenue tracking</li>
+                            <li>Customer segmentation and behavior analysis</li>
+                            <li>Inventory management and stock alerts</li>
+                            <li>Customizable reporting and data export</li>
+                            <li>Responsive design for all devices</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Chart.js</span>
+                        <span>Express</span>
+                        <span>Redux</span>
+                    </div>
+                    
+                    <div class="modal-challenges">
+                        <h3>Technical Highlights</h3>
+                        <p>The dashboard features a custom-built WebSocket implementation for real-time data updates without page refreshes. The backend uses MongoDB aggregation pipelines for complex data analysis, while the frontend leverages Chart.js for interactive visualizations.</p>
+                    </div>
+                    
+                    <div class="modal-links">
+                        <a href="https://github.com/yourusername/ecommerce-dashboard" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> View Source Code
+                        </a>
+                        <a href="ecommerce-demo.html" class="project-link secondary">
+                            <i class="fas fa-play-circle"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-5">
+        <div class="modal-container">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img src="images/work-5.png" alt="Fitness Tracker">
+                </div>
+                <div class="modal-details">
+                    <h2>AI Fitness Tracker</h2>
+                    <div class="modal-description">
+                        <p>A mobile application that uses machine learning to analyze workout form and provide real-time feedback, with personalized training plans and progress tracking. The app helps users exercise safely and effectively with AI-powered guidance.</p>
+                    </div>
+                    
+                    <div class="modal-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Real-time exercise form analysis</li>
+                            <li>Personalized workout recommendations</li>
+                            <li>Progress tracking and achievement system</li>
+                            <li>Integration with health apps and wearables</li>
+                            <li>Offline functionality for gym use</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-tags">
+                        <span>Flutter</span>
+                        <span>TensorFlow Lite</span>
+                        <span>Firebase</span>
+                        <span>Dart</span>
+                        <span>Google Fit API</span>
+                    </div>
+                    
+                    <div class="modal-challenges">
+                        <h3>AI Implementation</h3>
+                        <p>The app uses a custom-trained TensorFlow Lite model for real-time pose estimation on mobile devices. The model was trained on thousands of exercise videos to recognize proper and improper form across 15 different exercises.</p>
+                    </div>
+                    
+                    <div class="modal-links">
+                        <a href="https://github.com/yourusername/fitness-tracker" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> View Source Code
+                        </a>
+                        <a href="#" class="project-link secondary">
+                            <i class="fab fa-google-play"></i> Play Store
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-6">
+        <div class="modal-container">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img src="images/work-6.png" alt="CodeCollab">
+                </div>
+                <div class="modal-details">
+                    <h2>CodeCollab</h2>
+                    <div class="modal-description">
+                        <p>A real-time collaborative code editor with video chat functionality, designed for remote pair programming and technical interviews. The platform supports multiple programming languages with syntax highlighting and live execution.</p>
+                    </div>
+                    
+                    <div class="modal-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Real-time code collaboration</li>
+                            <li>Integrated video chat with screen sharing</li>
+                            <li>Multiple programming language support</li>
+                            <li>Code execution with output display</li>
+                            <li>Interview mode with question bank</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-tags">
+                        <span>React</span>
+                        <span>WebSockets</span>
+                        <span>Node.js</span>
+                        <span>WebRTC</span>
+                        <span>MongoDB</span>
+                        <span>Ace Editor</span>
+                    </div>
+                    
+                    <div class="modal-challenges">
+                        <h3>Team Collaboration</h3>
+                        <p>Developed by a team of 4 over 6 months, we implemented operational transformation for conflict-free real-time editing and optimized WebRTC for low-latency video communication. The project taught us valuable lessons about distributed systems and real-time synchronization.</p>
+                    </div>
+                    
+                    <div class="modal-links">
+                        <a href="https://github.com/yourusername/codecollab" class="project-link" target="_blank">
+                            <i class="fab fa-github"></i> View Source Code
+                        </a>
+                        <a href="https://codecollab-demo.vercel.app" class="project-link secondary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © 2024. Made with <i class="fas fa-heart"></i> by Akshay Sasi</p>
+    </div>
+
+    <script>
+        // Mobile menu functionality
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu() {
+            sidemenu.style.right = "0";
+            document.body.style.overflow = "hidden";
+        }
+        
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+            document.body.style.overflow = "auto";
+        }
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('#sidemenu a').forEach(link => {
+            link.addEventListener('click', closemenu);
+        });
+
+        // Project filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectItems = document.querySelectorAll('.project-item');
+            const noProjectsMessage = document.querySelector('.no-projects');
+            
+            // Filter projects based on category
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    let visibleCount = 0;
+                    
+                    // Filter projects
+                    projectItems.forEach(item => {
+                        const categories = item.getAttribute('data-categories').split(' ');
+                        
+                        if (filterValue === 'all' || categories.includes(filterValue)) {
+                            item.style.display = 'block';
+                            visibleCount++;
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                    
+                    // Show no projects message if none match filter
+                    if (visibleCount === 0) {
+                        noProjectsMessage.style.display = 'block';
+                    } else {
+                        noProjectsMessage.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Modal functionality
+            const viewDetailButtons = document.querySelectorAll('.view-details');
+            const modalOverlays = document.querySelectorAll('.modal-overlay');
+            const closeModalButtons = document.querySelectorAll('.close-modal');
+            
+            // Open modal when clicking view details
+            viewDetailButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const projectId = this.getAttribute('data-project');
+                    document.getElementById(`modal-${projectId}`).classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            // Close modal when clicking close button or overlay
+            closeModalButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    this.closest('.modal-overlay').classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                });
+            });
+            
+            modalOverlays.forEach(overlay => {
+                overlay.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        this.classList.remove('active');
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            });
+            
+            // Animate project items on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            projectItems.forEach(item => {
+                observer.observe(item);
+            });
+        });
+    </script>
+</body>
+</html>
