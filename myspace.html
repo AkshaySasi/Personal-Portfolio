@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Space - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="myspace.css">
+    <script src="https://kit.fontawesome.com/380e254419.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="splash">
+        <img src="images/logo.png" alt="Logo" class="splash-logo">
+        <div class="spinner"></div>
+    </div>
+    <div id="header" class="myspace-header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" href="#header" alt="Logo">
+                <ul id="sidemenu" class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experence">Experience</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="myspace.html" class="active">My Space</a></li>
+                    <li><button class="contact-btn" onclick="window.location.href='index.html#contact'">Contact</button></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <div class="theme-slider">
+                    <input type="checkbox" id="theme-toggle" class="theme-toggle">
+                    <label for="theme-toggle" class="slider"></label>
+                </div>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>My <span>Space</span></h1>
+                <p><span class="typing-text"></span><span class="cursor">|</span></p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Live Apps</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number">40+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Space Navigation -->
+    <section id="space-nav">
+        <div class="container">
+            <div class="space-tabs">
+                <button class="space-tab active" onclick="switchSpaceTab('web-apps')">
+                    <i class="fas fa-globe"></i>
+                    <span>Web Apps</span>
+                </button>
+                <button class="space-tab" onclick="switchSpaceTab('freelance')">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Freelance Work</span>
+                </button>
+                <button class="space-tab" onclick="switchSpaceTab('design')">
+                    <i class="fas fa-palette"></i>
+                    <span>Design</span>
+                </button>
+                <button class="space-tab" onclick="switchSpaceTab('consulting')">
+                    <i class="fas fa-handshake"></i>
+                    <span>Consulting</span>
+                </button>
+                <button class="space-tab" onclick="switchSpaceTab('clients')">
+                    <i class="fas fa-users"></i>
+                    <span>Clients</span>
+                </button>
+                <button class="space-tab" onclick="switchSpaceTab('linkedin')">
+                    <i class="fab fa-linkedin"></i>
+                    <span>Latest Posts</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Apps Section -->
+    <section id="web-apps" class="space-content active">
+        <div class="container">
+            <div class="section-intro">
+                <h2>Live Web Applications</h2>
+                <p>Interactive AI-powered applications deployed and ready to use</p>
+            </div>
+            
+            <div class="apps-grid">
+                <!-- App Card 1 -->
+                <div class="app-card">
+                    <div class="app-status-badge live">
+                        <span class="status-dot"></span>
+                        <span>Live</span>
+                    </div>
+                    <div class="app-preview">
+                        <img src="images/work-1.png" alt="Baymax AI Chat">
+                        <div class="app-overlay">
+                            <button class="btn-launch" onclick="window.open('#', '_blank')">
+                                <i class="fas fa-rocket"></i> Launch App
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-info">
+                        <h3>Baymax.AI - Mental Health Companion</h3>
+                        <p>Emotionally intelligent AI chatbot providing mental health support with empathetic responses</p>
+                        <div class="app-stats">
+                            <span><i class="fas fa-users"></i> 1.2K users</span>
+                            <span><i class="fas fa-star"></i> 4.8/5</span>
+                            <span><i class="fas fa-comments"></i> 5K+ conversations</span>
+                        </div>
+                        <div class="app-tech">
+                            <span>React</span>
+                            <span>FastAPI</span>
+                            <span>Gemini 2.0</span>
+                            <span>PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- App Card 2 -->
+                <div class="app-card">
+                    <div class="app-status-badge live">
+                        <span class="status-dot"></span>
+                        <span>Live</span>
+                    </div>
+                    <div class="app-preview">
+                        <img src="images/work-2.png" alt="Research Assistant">
+                        <div class="app-overlay">
+                            <button class="btn-launch" onclick="window.open('#', '_blank')">
+                                <i class="fas fa-rocket"></i> Launch App
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-info">
+                        <h3>ThinkOnIT - AI Research Assistant</h3>
+                        <p>Autonomous research tool that fetches and synthesizes academic papers using LLMs</p>
+                        <div class="app-stats">
+                            <span><i class="fas fa-users"></i> 800 users</span>
+                            <span><i class="fas fa-file-alt"></i> 10K+ papers analyzed</span>
+                            <span><i class="fas fa-chart-line"></i> 85% relevance</span>
+                        </div>
+                        <div class="app-tech">
+                            <span>LangChain</span>
+                            <span>LlamaIndex</span>
+                            <span>Python</span>
+                            <span>Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- App Card 3 - Coming Soon -->
+                <div class="app-card">
+                    <div class="app-status-badge coming-soon">
+                        <span class="status-dot"></span>
+                        <span>Coming Soon</span>
+                    </div>
+                    <div class="app-preview">
+                        <img src="images/web-project.jpg" alt="AI Code Assistant">
+                        <div class="app-overlay">
+                            <div class="coming-soon-text">
+                                <i class="fas fa-clock"></i>
+                                <p>Launching Soon</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-info">
+                        <h3>CodeMentor - AI Coding Assistant</h3>
+                        <p>Intelligent code completion and debugging assistant for developers</p>
+                        <div class="app-tech">
+                            <span>GPT-4</span>
+                            <span>VS Code Extension</span>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Freelance Projects Section -->
+    <section id="freelance" class="space-content">
+        <div class="container">
+            <div class="section-intro">
+                <h2>Freelance AI Projects</h2>
+                <p>Success stories from client collaborations</p>
+            </div>
+            
+            <div class="freelance-timeline">
+                <!-- Project 1 -->
+                <div class="freelance-item">
+                    <div class="freelance-marker">
+                        <span class="marker-dot"></span>
+                    </div>
+                    <div class="freelance-content">
+                        <div class="freelance-date">Q4 2024</div>
+                        <h3>E-commerce Recommendation Engine</h3>
+                        <p class="client-name">
+                            <i class="fas fa-building"></i> Fashion Retail Company
+                        </p>
+                        <p class="project-desc">
+                            Developed a personalized product recommendation system using collaborative filtering and deep learning, resulting in significant business impact
+                        </p>
+                        <div class="project-results">
+                            <div class="result-item">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>45% increase in sales</span>
+                            </div>
+                            <div class="result-item">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>35% higher conversion rate</span>
+                            </div>
+                            <div class="result-item">
+                                <i class="fas fa-users"></i>
+                                <span>2M+ users served</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>AWS</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="freelance-item">
+                    <div class="freelance-marker">
+                        <span class="marker-dot"></span>
+                    </div>
+                    <div class="freelance-content">
+                        <div class="freelance-date">Q3 2024</div>
+                        <h3>Document Classification System</h3>
+                        <p class="client-name">
+                            <i class="fas fa-building"></i> Legal Tech Startup
+                        </p>
+                        <p class="project-desc">
+                            Built an NLP-powered document classification and extraction system for legal documents
+                        </p>
+                        <div class="project-results">
+                            <div class="result-item">
+                                <i class="fas fa-clock"></i>
+                                <span>70% time saved</span>
+                            </div>
+                            <div class="result-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>92% accuracy</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span>PyTorch</span>
+                            <span>Transformers</span>
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="freelance-item">
+                    <div class="freelance-marker">
+                        <span class="marker-dot"></span>
+                    </div>
+                    <div class="freelance-content">
+                        <div class="freelance-date">Q2 2024</div>
+                        <h3>Predictive Maintenance System</h3>
+                        <p class="client-name">
+                            <i class="fas fa-building"></i> Manufacturing Company
+                        </p>
+                        <p class="project-desc">
+                            Implemented ML-based predictive maintenance to reduce equipment downtime
+                        </p>
+                        <div class="project-results">
+                            <div class="result-item">
+                                <i class="fas fa-arrow-down"></i>
+                                <span>60% reduction in downtime</span>
+                            </div>
+                            <div class="result-item">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$500K saved annually</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack">
+                            <span>Scikit-learn</span>
+                            <span>XGBoost</span>
+                            <span>Azure ML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Portfolio Section -->
+    <section id="design" class="space-content">
+        <div class="container">
+            <div class="section-intro">
+                <h2>Design Portfolio</h2>
+                <p>Brand identities, graphics, and creative work</p>
+            </div>
+            
+            <div class="design-grid">
+                <!-- Design 1 -->
+                <div class="design-item">
+                    <img src="images/design-project.jpg" alt="Sapience Edu Connect Branding">
+                    <div class="design-overlay">
+                        <h3>Sapience Edu Connect</h3>
+                        <p>Complete brand identity package with logo, color scheme, and marketing materials</p>
+                        <div class="design-tags">
+                            <span>Branding</span>
+                            <span>Logo Design</span>
+                            <span>Marketing</span>
+                        </div>
+                        <button class="btn-view" onclick="openDesignModal('design-1')">View Project</button>
+                    </div>
+                </div>
+
+                <!-- Design 2 -->
+                <div class="design-item">
+                    <img src="images/design-project.jpg" alt="Event Poster Design">
+                    <div class="design-overlay">
+                        <h3>Vyuham'24 Tech Fest</h3>
+                        <p>Event branding and promotional materials for university tech fest</p>
+                        <div class="design-tags">
+                            <span>Event Design</span>
+                            <span>Posters</span>
+                            <span>Social Media</span>
+                        </div>
+                        <button class="btn-view" onclick="openDesignModal('design-2')">View Project</button>
+                    </div>
+                </div>
+
+                <!-- Design 3 -->
+                <div class="design-item">
+                    <img src="images/design-project.jpg" alt="UI/UX Design">
+                    <div class="design-overlay">
+                        <h3>Mobile App UI/UX</h3>
+                        <p>User interface and experience design for mobile applications</p>
+                        <div class="design-tags">
+                            <span>UI/UX</span>
+                            <span>Figma</span>
+                            <span>Mobile</span>
+                        </div>
+                        <button class="btn-view" onclick="openDesignModal('design-3')">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consulting Section -->
+    <section id="consulting" class="space-content">
+        <div class="container">
+            <div class="section-intro">
+                <h2>AI Consulting Services</h2>
+                <p>Strategic guidance and technical expertise for businesses</p>
+            </div>
+            
+            <div class="consulting-grid">
+                <!-- Service 1 -->
+                <div class="consulting-card">
+                    <div class="consulting-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>ML Strategy Consulting</h3>
+                    <p>Helped 5+ companies define their AI/ML roadmap and implementation strategy</p>
+                    <div class="success-metrics">
+                        <div class="metric">
+                            <span class="value">100%</span>
+                            <span class="label">Success Rate</span>
+                        </div>
+                        <div class="metric">
+                            <span class="value">5+</span>
+                            <span class="label">Companies</span>
+                        </div>
+                    </div>
+                    <ul class="service-includes">
+                        <li><i class="fas fa-check"></i> AI Readiness Assessment</li>
+                        <li><i class="fas fa-check"></i> Technology Stack Selection</li>
+                        <li><i class="fas fa-check"></i> Implementation Roadmap</li>
+                        <li><i class="fas fa-check"></i> Team Training</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="consulting-card">
+                    <div class="consulting-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Model Development & Optimization</h3>
+                    <p>End-to-end ML model development, training, and deployment services</p>
+                    <div class="success-metrics">
+                        <div class="metric">
+                            <span class="value">15+</span>
+                            <span class="label">Models Deployed</span>
+                        </div>
+                        <div class="metric">
+                            <span class="value">90%</span>
+                            <span class="label">Avg Accuracy</span>
+                        </div>
+                    </div>
+                    <ul class="service-includes">
+                        <li><i class="fas fa-check"></i> Custom Model Development</li>
+                        <li><i class="fas fa-check"></i> Fine-tuning & Optimization</li>
+                        <li><i class="fas fa-check"></i> MLOps Setup</li>
+                        <li><i class="fas fa-check"></i> Performance Monitoring</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="consulting-card">
+                    <div class="consulting-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>AI Training & Workshops</h3>
+                    <p>Corporate training programs and workshops on AI/ML technologies</p>
+                    <div class="success-metrics">
+                        <div class="metric">
+                            <span class="value">200+</span>
+                            <span class="label">Professionals Trained</span>
+                        </div>
+                        <div class="metric">
+                            <span class="value">4.9/5</span>
+                            <span class="label">Rating</span>
+                        </div>
+                    </div>
+                    <ul class="service-includes">
+                        <li><i class="fas fa-check"></i> Customized Curriculum</li>
+                        <li><i class="fas fa-check"></i> Hands-on Projects</li>
+                        <li><i class="fas fa-check"></i> Best Practices</li>
+                        <li><i class="fas fa-check"></i> Post-training Support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Happy Clients Section -->
+    <section id="clients" class="space-content">
+        <div class="container">
+            <div class="section-intro">
+                <h2>Happy Clients & Testimonials</h2>
+                <p>What clients say about working with me</p>
+            </div>
+            
+            <!-- Client Logos Wall -->
+            <div class="clients-wall">
+                <div class="client-logo">
+                    <img src="images/storygame.jfif" alt="Storygame Pvt Ltd">
+                </div>
+                <div class="client-logo">
+                    <img src="images/quest_global.jpg" alt="Quest Global">
+                </div>
+                <div class="client-logo">
+                    <img src="images/Sap_jpg.jpg" alt="Sapience Edu Connect">
+                </div>
+                <div class="client-logo">
+                    <img src="images/duk.png" alt="Digital University Kerala">
+                </div>
+                <!-- Add more client logos -->
+            </div>
+            
+            <!-- Testimonials -->
+            <div class="testimonials-container">
+                <h3 class="testimonials-title">Client Testimonials</h3>
+                <div class="testimonials-slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">
+                                "Akshay delivered an exceptional ML solution that transformed our business operations. His deep technical expertise, coupled with excellent communication skills, made the entire project seamless. The recommendation system he built increased our sales by 45%!"
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/user.png" alt="Client Photo" class="author-photo">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>CTO, E-commerce Platform</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">
+                                "Working with Akshay was a game-changer for our legal tech startup. His NLP expertise helped us build a document classification system that saves our team 70% of their time. Highly professional and delivers on promises!"
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/user.png" alt="Client Photo" class="author-photo">
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <p>Founder, Legal Tech Startup</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">
+                                "Akshay's consulting on our AI strategy was invaluable. He not only helped us identify the right technologies but also created a practical implementation roadmap. Our AI initiatives are now running successfully thanks to his guidance."
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/user.png" alt="Client Photo" class="author-photo">
+                            <div class="author-info">
+                                <h4>Priya Sharma</h4>
+                                <p>VP Technology, FinTech Company</p>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider Controls -->
+                <div class="slider-controls">
+                    <button class="slider-btn prev" onclick="prevTestimonial()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn next" onclick="nextTestimonial()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Client Stats Dashboard -->
+            <div class="client-stats">
+                <div class="stat-box">
+                    <i class="fas fa-users"></i>
+                    <h3 class="stat-number" data-target="25">0</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3 class="stat-number" data-target="40">0</h3>
+                    <p>Projects Delivered</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-smile"></i>
+                    <h3 class="stat-number" data-target="100">0</h3>
+                    <p>Satisfaction Rate %</p>
+                </div>
+                <div class="stat-box">
+                    <i class="fas fa-redo"></i>
+                    <h3 class="stat-number" data-target="85">0</h3>
+                    <p>Repeat Clients %</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LinkedIn Posts Section -->
+    <section id="linkedin" class="space-content">
+        <div class="container">
+            <div class="section-intro">
+                <h2>Latest from LinkedIn</h2>
+                <p>My recent thoughts, insights, and updates on AI & Technology</p>
+            </div>
+            
+            <div class="linkedin-posts-grid" id="linkedinFeed">
+                <!-- Posts will be loaded dynamically via JavaScript -->
+                <!-- Placeholder Post 1 -->
+                <div class="linkedin-post-card">
+                    <div class="post-header">
+                        <img src="images/user.png" alt="Akshay Sasi" class="post-author-img">
+                        <div class="post-author-info">
+                            <h4>Akshay Sasi</h4>
+                            <p>AI Engineer | ML Enthusiast | Tech Innovator</p>
+                            <span class="post-date">2 days ago</span>
+                        </div>
+                        <a href="https://linkedin.com/in/akshay-sasi" class="linkedin-icon" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <p>Excited to share insights from my latest project on fine-tuning Large Language Models for mental health applications. The intersection of AI and healthcare continues to present fascinating challenges and opportunities. 🚀
+
+Key learnings:
+• Importance of domain-specific data
+• Ethical considerations in health tech
+• User-centric design in AI applications
+
+#AI #MachineLearning #HealthTech #LLM</p>
+                    </div>
+                    <div class="post-engagement">
+                        <span><i class="fas fa-thumbs-up"></i> 145 likes</span>
+                        <span><i class="fas fa-comment"></i> 23 comments</span>
+                        <span><i class="fas fa-share"></i> 12 shares</span>
+                    </div>
+                    <a href="https://linkedin.com/in/akshay-sasi" class="btn-view-post" target="_blank">
+                        View on LinkedIn
+                    </a>
+                </div>
+
+                <!-- Placeholder Post 2 -->
+                <div class="linkedin-post-card">
+                    <div class="post-header">
+                        <img src="images/user.png" alt="Akshay Sasi" class="post-author-img">
+                        <div class="post-author-info">
+                            <h4>Akshay Sasi</h4>
+                            <p>AI Engineer | ML Enthusiast | Tech Innovator</p>
+                            <span class="post-date">5 days ago</span>
+                        </div>
+                        <a href="https://linkedin.com/in/akshay-sasi" class="linkedin-icon" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <p>Just completed an amazing consulting project helping a startup implement their AI strategy from scratch. It's incredibly rewarding to see how proper ML architecture can transform business operations.
+
+Some practical tips for AI implementation:
+✅ Start with clear business objectives
+✅ Ensure data quality from day one
+✅ Build iteratively
+✅ Measure impact continuously
+
+#AIConsulting #MLOps #TechStrategy</p>
+                    </div>
+                    <div class="post-engagement">
+                        <span><i class="fas fa-thumbs-up"></i> 89 likes</span>
+                        <span><i class="fas fa-comment"></i> 15 comments</span>
+                        <span><i class="fas fa-share"></i> 8 shares</span>
+                    </div>
+                    <a href="https://linkedin.com/in/akshay-sasi" class="btn-view-post" target="_blank">
+                        View on LinkedIn
+                    </a>
+                </div>
+
+                <!-- Placeholder Post 3 -->
+                <div class="linkedin-post-card">
+                    <div class="post-header">
+                        <img src="images/user.png" alt="Akshay Sasi" class="post-author-img">
+                        <div class="post-author-info">
+                            <h4>Akshay Sasi</h4>
+                            <p>AI Engineer | ML Enthusiast | Tech Innovator</p>
+                            <span class="post-date">1 week ago</span>
+                        </div>
+                        <a href="https://linkedin.com/in/akshay-sasi" class="linkedin-icon" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <p>Reflecting on my journey in AI/ML - from academic research to building production-ready systems. The field has evolved dramatically, and so has my approach to solving problems.
+
+What I've learned:
+🔹 Theory is important, but practical implementation teaches you more
+🔹 User feedback is gold
+🔹 Continuous learning is non-negotiable
+🔹 Collaboration amplifies impact
+
+Looking forward to more exciting challenges ahead! 💡
+
+#AIJourney #MachineLearning #CareerGrowth</p>
+                    </div>
+                    <div class="post-engagement">
+                        <span><i class="fas fa-thumbs-up"></i> 201 likes</span>
+                        <span><i class="fas fa-comment"></i> 34 comments</span>
+                        <span><i class="fas fa-share"></i> 15 shares</span>
+                    </div>
+                    <a href="https://linkedin.com/in/akshay-sasi" class="btn-view-post" target="_blank">
+                        View on LinkedIn
+                    </a>
+                </div>
+            </div>
+            
+            <div class="linkedin-cta">
+                <a href="https://linkedin.com/in/akshay-sasi" class="btn-follow-linkedin" target="_blank">
+                    <i class="fab fa-linkedin"></i> Follow on LinkedIn for More Updates
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Reused from main page) -->
+    <div id="contact">
+        <div class="container-a">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h1 class="section-title">Get In <span>Touch</span></h1>
+                    <p class="contact-subtitle">Interested in working together? Let's talk!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <a href="mailto:akshaysasi12.km@gmail.com">akshaysasi12.km@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Phone</h3>
+                                <a href="tel:+918304912440">+91 8304912440</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Location</h3>
+                                <p>Kannur, Kerala, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Connect With Me</h3>
+                        <div class="social-icons">
+                            <a href="https://linkedin.com/in/akshay-sasi" target="_blank" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/yourusername" target="_blank" class="social-icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://twitter.com/_Aks_haY_" target="_blank" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com/ak__sky" target="_blank" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send Me a Message</h2>
+                    <form id="contactForm" class="form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required minlength="2">
+                            <label for="name">Your Name</label>
+                            <div class="underline"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <div class="underline"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="underline"></div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    
+                    <div id="formStatus"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>Copyright © <span id="currentYear">2024</span> Akshay Sasi. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="myspace.js"></script>
+    <script>
+        // Navigation menu
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+        // Splash screen
+        window.addEventListener("load", () => {
+            const splash = document.getElementById("splash");
+            splash.style.opacity = 1;
+            setTimeout(() => {
+                splash.style.opacity = 0;
+                splash.style.transition = "opacity 0.3s ease";
+                setTimeout(() => splash.style.display = "none", 300);
+            }, 600);
+        });
+
+        // Theme toggle
+        document.getElementById('theme-toggle').addEventListener('change', function() {
+            document.body.classList.toggle('light-theme');
+            if (this.checked) {
+                localStorage.setItem('theme', 'light');
+            } else {
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+        
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.body.classList.add(savedTheme + '-theme');
+            document.getElementById('theme-toggle').checked = savedTheme === 'light';
+        }
+
+        // Set current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Typing Animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const typingText = document.querySelector('.typing-text');
+            const cursor = document.querySelector('.cursor');
+            if (!typingText) return;
+            
+            const designations = ["AI Engineer", "Researcher", "Graphic Designer"];
+            let currentDesignation = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            let typingSpeed = 150;
+            
+            function type() {
+                const fullText = designations[currentDesignation];
+                
+                if (isDeleting) {
+                    typingText.textContent = fullText.substring(0, charIndex - 1);
+                    charIndex--;
+                    typingSpeed = 50;
+                } else {
+                    typingText.textContent = fullText.substring(0, charIndex + 1);
+                    charIndex++;
+                    typingSpeed = 150;
+                }
+                
+                if (!isDeleting && charIndex === fullText.length) {
+                    typingSpeed = 2000;
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    currentDesignation = (currentDesignation + 1) % designations.length;
+                    typingSpeed = 500;
+                }
+                
+                setTimeout(type, typingSpeed);
+            }
+            
+            setTimeout(type, 1000);
+        });
+
+    </script>
+
+</body>
+</html>

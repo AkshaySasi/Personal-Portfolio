@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Akshay Sasi - AI Engineer specializing in Machine Learning, Deep Learning, and LLM Solutions. Explore my portfolio, projects, and expertise.">
+    <meta name="keywords" content="AI Engineer, Digital University Kerala, Machine Learning, Deep Learning, NLP, LLM, PyTorch, TensorFlow, Akshay Sasi">
+    <meta name="author" content="Akshay Sasi">
+    <link rel="canonical" href="https://akshaysasi.github.io/Personal-Portfolio/">
+    
+    <title>Akshay Sasi - AI Engineer Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Akshay Sasi - AI Engineer Portfolio">
+    <meta property="og:description" content="Showcasing AI/ML projects, research, and innovative solutions">
+    <meta property="og:image" content="images/og-image.png">
+    <meta property="og:url" content="https://akshaysasi.github.io/Personal-Portfolio/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@_Aks_haY_">
+    <meta name="twitter:title" content="Akshay Sasi - AI Engineer">
+    <meta name="twitter:description" content="AI Engineer specializing in ML, DL, and LLM Solutions">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="images/logo.png" as="image">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/380e254419.js" crossorigin="anonymous"></script>
+</head>    
+<body>
+    <!-- Splash Screen -->
+    <div id="splash">
+        <img src="images/logo.png" alt="Akshay Sasi Logo" class="splash-logo" loading="lazy">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="Akshay Sasi Logo" loading="lazy">
+                <ul id="sidemenu" class="menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="space.html">My Space</a></li>
+                    <li><button class="contact-btn" onclick="window.location.href='#contact'">Contact</button></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()" aria-label="Close menu"></i>
+                </ul>
+                <div class="theme-slider">
+                    <input type="checkbox" id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme">
+                    <label for="theme-toggle" class="slider"></label>
+                </div>
+                <i class="fa-solid fa-bars" onclick="openmenu()" aria-label="Open menu"></i>
+            </nav>
+            
+            <div class="header-text">
+                <h1>I'm <span>Akshay Sasi</span></h1>
+                <p><span class="typing-text"></span><span class="cursor">|</span></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- About Section -->
+    <div id="about" class="section">
+        <div class="container">
+            <div class="about-header">
+                <h1 class="section-title" data-aos="fade-down">About <span>Me</span></h1>
+                <div class="divider" data-aos="fade-up"></div>
+                <p class="tagline" data-aos="fade-up" data-aos-delay="200">I’m someone who loves building things that make sense - and make a difference. My work sits at the crossroads of AI, creativity, and human impact, where logic meets empathy. I enjoy exploring ideas, experimenting with technology, and shaping solutions that actually matter. I don’t chase trends; I chase meaning! and I’m always learning, creating, and refining along the way.</p>
+            </div>
+
+            <div class="profile-section">
+                <div class="profile-card animated-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="profile-image">
+                        <img src="images/user.png" alt="Akshay Sasi Profile Picture" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="social-icons">
+                                <a href="https://linkedin.com/in/akshay-sasi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/AkshaySasi" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://instagram.com/ak__sky" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-info">
+                        <h3>Akshay Sasi</h3>
+                        <p>AI Engineer & Creative Innovator</p>
+                        <div class="profile-details">
+                            <span><i class="fas fa-birthday-cake"></i> 12 Dec 2000</span>
+                            <span><i class="fas fa-passport"></i> Indian</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Kannur, Kerala</span>
+                        </div>
+                        <a href="images/resume.pdf" download class="resume-btn">
+                            <i class="fas fa-download"></i> Download My Resume
+                        </a>
+                    </div>
+
+                    <!-- Animated Counters -->
+                    <div class="counter-box">
+                        <div class="counter-row">
+                            <div id="xp-counter" class="counter"></div>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="label">Years of Experience</div>
+                    </div>
+                    
+                    <div class="counter-box">
+                        <div class="counter-row">
+                            <div id="project-counter" class="counter"></div>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="label">Projects Completed</div>
+                    </div>
+                </div>
+
+                <div class="expertise-section" data-aos="fade-up" data-aos-delay="600">
+                    <h3>My Expertise</h3>
+                    <div class="expertise-grid">
+                        <div class="expertise-item" data-tooltip="Building intelligent systems">
+                            <i class="fas fa-brain"></i>
+                            <span>Artificial Intelligence</span>
+                        </div>
+                        <div class="expertise-item" data-tooltip="Crafting neural networks">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Data Science</span>
+                        </div>
+                        <div class="expertise-item" data-tooltip="Understanding human cognition">
+                            <i class="fas fa-head-side-virus"></i>
+                            <span>Cognitive Science</span>
+                        </div>
+                        <div class="expertise-item" data-tooltip="Creating visual solutions">
+                            <i class="fas fa-palette"></i>
+                            <span>Graphic Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div id="experience">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h1 class="section-title">My <span>Experience</span></h1>
+                <div class="animated-divider"></div>
+            </div>
+
+            <!-- Journey Tabs -->
+            <div class="journey-tabs">
+                <button class="tab-btn active" onclick="openTab('professional')">Professional</button>
+                <button class="tab-btn" onclick="openTab('education')">Academic</button>
+            </div>
+
+            <!-- Professional Experience Content -->
+            <div id="professional" class="tab-content active-tab">
+                <div class="timeline">
+                    <!-- Current Position -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3 class="left-align">AI Engineer</h3>
+                                <span class="timeline-date">June 2025 - Present</span>
+                                <div class="institute-logo">
+                                    <img src="images/storygame.jfif" alt="Storygame Pvt Ltd Logo" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="institute">Storygame Pvt Ltd</p>
+                                <p class="specialization">Technopark, Trivandrum, Kerala</p>
+                                <ul class="achievements">
+                                    <li>Working on LLM model inferencing and Model Fine-Tuning. Text, Image and Video generation Open-source Models.</li>
+                                    <li>Working on Agentic AI and AI workflow automation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Intern -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3 class="left-align">AI Intern</h3>
+                                <span class="timeline-date">Jan 2025 - June 2025</span>
+                                <div class="institute-logo">
+                                    <img src="images/quest_global.jpg" alt="Quest Global Logo" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="institute">Quest Global</p>
+                                <p class="specialization">Technopark, Trivandrum, Kerala</p>
+                                <ul class="achievements">
+                                    <li>Worked on development of internal Machine Learning and Deep Learning projects.</li>
+                                    <li>Researched on latest AI/ML and NLP frameworks for clustering and prediction.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- R&D Intern -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3 class="left-align">Research & Development Intern</h3>
+                                <span class="timeline-date">Apr 2024 - July 2024</span>
+                                <div class="institute-logo">
+                                    <img src="images/duk.png" alt="Digital University Kerala Logo" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="institute">AI Chip Center - Digital University Kerala</p>
+                                <p class="specialization">Trivandrum, Kerala</p>
+                                <ul class="achievements">
+                                    <li>Designed custom compilers and processor architectures for AI chips.</li>
+                                    <li>Worked on X-HEEP and RISC-V processor architecture.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Graphic Designer -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3 class="left-align">Part-time Graphic Designer</h3>
+                                <span class="timeline-date">June 2024 - Mar 2025</span>
+                                <div class="institute-logo">
+                                    <img src="images/Sap_jpg.jpg" alt="Sapience Edu Connect Logo" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="institute">Sapience Edu Connect</p>
+                                <p class="specialization">Remote work</p>
+                                <ul class="achievements">
+                                    <li>Designed promotional graphic contents, marketing posters and brand logo.</li>
+                                    <li>Researched and developed user engaging marketing graphic contents for social media.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Content -->
+            <div id="education" class="tab-content">
+                <div class="timeline">
+                    <!-- M.Tech -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3 class="left-align">M.Tech Computer Science & Engineering</h3>
+                                <span class="timeline-date">Sep 2023 - May 2025</span>
+                                <div class="institute-logo">
+                                    <img src="images/duk.png" alt="Digital University Kerala Logo" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="institute">Digital University Kerala (formerly IIITMK)</p>
+                                <p class="specialization">Trivandrum, Kerala</p>
+                                <ul class="achievements">
+                                    <li>Specialization in AI</li>
+                                    <li>CGPA: 7.9</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- B.Tech -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3 class="left-align">B.Tech Computer Science & Engineering</h3>
+                                <span class="timeline-date">Aug 2019 - Aug 2023</span>
+                                <div class="institute-logo">
+                                    <img src="images/KTU.jpg" alt="APJ Abdul Kalam Technological University Logo" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="institute">APJ Abdul Kalam Technological University</p>
+                                <p class="specialization">Kannur, Kerala</p>
+                                <ul class="achievements">
+                                    <li>Vimal Jyothi Engineering College</li>
+                                    <li>CGPA: 7.64</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 12th -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3 class="left-align">12th CBSE (Computer Science)</h3>
+                                <span class="timeline-date">Apr 2017 - Apr 2019</span>
+                                <div class="institute-logo">
+                                    <img src="images/KV.png" alt="Kendriya Vidyalaya Logo" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="institute">Kendriya Vidyalaya Kannur</p>
+                                <p class="specialization">Kannur, Kerala</p>
+                                <ul class="achievements">
+                                    <li>Computer Science Branch</li>
+                                    <li>Score: 78.2%</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------- Skills Section ----------------------->
+
+    <section id="skills">
+        <div class="container-a">
+            <div class="section-title">
+                <h1>My <span>Skills</span></h1>
+                <p class="tagline">Comprehensive technical arsenal across AI, development, and research</p>
+            </div>
+        </div>
+    
+        <div class="container-a">
+            <!-- Category Tabs -->
+            <div class="skills-tabs">
+                <button class="tab-button active" onclick="showSkillCategory(event, 'programming')">
+                    <i class="fas fa-code"></i>
+                    <span>Programming</span>
+                </button>
+                <button class="tab-button" onclick="showSkillCategory(event, 'ml-ai')">
+                    <i class="fas fa-brain"></i>
+                    <span>ML & AI</span>
+                </button>
+                <button class="tab-button" onclick="showSkillCategory(event, 'web')">
+                    <i class="fas fa-globe"></i>
+                    <span>Web Tech</span>
+                </button>
+                <button class="tab-button" onclick="showSkillCategory(event, 'genai')">
+                    <i class="fas fa-robot"></i>
+                    <span>Gen AI</span>
+                </button>
+                <button class="tab-button" onclick="showSkillCategory(event, 'data')">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Data Science</span>
+                </button>
+                <button class="tab-button" onclick="showSkillCategory(event, 'tools')">
+                    <i class="fas fa-tools"></i>
+                    <span>Tools</span>
+                </button>
+                <button class="tab-button" onclick="showSkillCategory(event, 'soft')">
+                    <i class="fas fa-users"></i>
+                    <span>Soft Skills</span>
+                </button>
+            </div>
+    
+            <!-- Skills Content -->
+            <div class="skills-content-wrapper">
+                <!-- Programming Languages -->
+                <div id="programming" class="skill-category active">
+                    <div class="category-header">
+                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    </div>
+                    <div class="skills-grid-tags">
+                        <div class="skill-tag expert">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                            <span class="skill-level">90%</span>
+                        </div>
+                        <div class="skill-tag advanced">
+                            <i class="fas fa-copyright"></i>
+                            <span>C</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-tag advanced">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-tag advanced">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Web Technologies -->
+                <div id="web" class="skill-category">
+                    <div class="category-header">
+                        <h3><i class="fas fa-globe"></i> Web Technologies</h3>
+                    </div>
+                    <div class="skills-grid-tags">
+                        <div class="skill-tag expert">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-tag expert">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-tag advanced">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-tag advanced">
+                            <i class="fab fa-react"></i>
+                            <span>ReactJS</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- ML & Deep Learning -->
+                <div id="ml-ai" class="skill-category">
+                    <div class="category-header">
+                        <h3><i class="fas fa-brain"></i> Machine Learning & Deep Learning</h3>
+                    </div>
+                    <div class="skills-grid-tags">
+                        <div class="skill-tag expert">
+                            <i class="fas fa-fire"></i>
+                            <span>PyTorch</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-tag expert">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>Scikit-learn</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-tag advanced">
+                            <i class="fas fa-robot"></i>
+                            <span>HuggingFace</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-tag advanced">
+                            <i class="fas fa-network-wired"></i>
+                            <span>TensorFlow</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-tag advanced">
+                            <i class="fas fa-eye"></i>
+                            <span>OpenCV</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Generative AI -->
+                <div id="genai" class="skill-category">
+                    <div class="category-header">
+                        <h3><i class="fas fa-robot"></i> Generative AI</h3>
+                    </div>
+                    <div class="skills-grid-tags">
+                        <div class="skill-tag expert">
+                            <i class="fas fa-brain"></i>
+                            <span>LLMs</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-tag expert">
+                            <i class="fas fa-microchip"></i>
+                            <span>SLMs</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-tag expert">
+                            <i class="fas fa-magic"></i>
+                            <span>Prompt Engineering</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-tag advanced">
+                            <i class="fas fa-sliders-h"></i>
+                            <span>Model Fine-tuning</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-tag advanced">
+                            <i class="fas fa-search"></i>
+                            <span>RAG</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-tag advanced">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Model Optimization</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Data Science -->
+                <div id="data" class="skill-category">
+                    <div class="category-header">
+                        <h3><i class="fas fa-chart-line"></i> Data Science & Analytics</h3>
+                    </div>
+                    <div class="skills-grid-tags">
+                        <div class="skill-tag expert">
+                            <i class="fas fa-calculator"></i>
+                            <span>NumPy</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-tag expert">
+                            <i class="fas fa-table"></i>
+                            <span>Pandas</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-tag advanced">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Matplotlib</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-tag advanced">
+                            <i class="fas fa-filter"></i>
+                            <span>Data Preprocessing</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-tag advanced">
+                            <i class="fas fa-cogs"></i>
+                            <span>Feature Engineering</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Tools & Technologies -->
+                <div id="tools" class="skill-category">
+                    <div class="category-header">
+                        <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    </div>
+                    <div class="skills-grid-tags">
+                        <div class="skill-tag advanced">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-tag intermediate">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>n8n</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="skill-tag expert">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-tag advanced">
+                            <i class="fas fa-file-word"></i>
+                            <span>MS Office</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-tag expert">
+                            <i class="fas fa-palette"></i>
+                            <span>Canva</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-tag expert">
+                            <i class="fas fa-book"></i>
+                            <span>Jupyter Notebook</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Soft Skills -->
+                <div id="soft" class="skill-category">
+                    <div class="category-header">
+                        <h3><i class="fas fa-users"></i> Soft Skills & Research</h3>
+                    </div>
+                    <div class="skills-grid-tags">
+                        <div class="skill-tag expert">
+                            <i class="fas fa-crown"></i>
+                            <span>Leadership</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-tag expert">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Problem Solving</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-tag expert">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Creative Thinking</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-tag expert">
+                            <i class="fas fa-brain"></i>
+                            <span>Critical Thinking</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-tag expert">
+                            <i class="fas fa-users-cog"></i>
+                            <span>Teamwork</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-tag expert">
+                            <i class="fas fa-book-open"></i>
+                            <span>Literature Review</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-tag advanced">
+                            <i class="fas fa-flask"></i>
+                            <span>Experimental Design</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <div id="achievements">
+        <div class="container">
+            <div class="section-title">
+                <h1 class="sub-title">Certifications & <span>Achievements</span></h1>
+                <div class="animated-divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-dot"></div>
+                </div>
+            </div>
+            <div class="achievements-list">
+                <div class="achievement">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h2>Academic Excellence Award: M.Tech AI (Second Rank)</h2>
+                    <p>Digital University Kerala | October 2025</p>
+                    <a href="#" class="btn">View Certificate</a>
+                </div>
+                <div class="achievement">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h2>1st Prize, ICT Day Hackathon</h2>
+                    <p>Women Cell, Digital University Kerala | April 2025</p>
+                    <a href="#" class="btn">View Certificate</a>
+                </div>
+                <div class="achievement">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h2>3rd Prize, Ethical AI Ideathon</h2>
+                    <p>Digital University Kerala \& Mozilla Responsible Computing Challenge | September 2024</p>
+                    <a href="#" class="btn">View Certificate</a>
+                </div>
+                <div class="achievement">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h2>1st Prize, Business Model Competition</h2>
+                    <p>Digital University Kerala | May 2024</p>
+                    <a href="#" class="btn">View Certificate</a>
+                </div>
+                <div class="achievement">
+                    <i class="fa-solid fa-certificate"></i>
+                    <h2>Introduction to Large Language Models</h2>
+                    <p>NPTEL Swayam Course| April 2025</p>
+                    <a href="#" class="btn">View Certificate</a>
+                </div>
+                <div class="achievement">
+                    <i class="fa-solid fa-certificate"></i>
+                    <h2>Building RAG Agents</h2>
+                    <p>NVIDIA Generative AI/LLM Course| July 2025</p>
+                    <a href="#" class="btn">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Responsibilities Section -->
+    <div id="responsibilities">
+        <div class="container-a">
+            <div class="section-title">
+                <h1 class="sub-title">Positions of <span>Responsibility</span></h1>
+                <div class="animated-divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-dot"></div>
+                </div>
+            </div>
+            <div class="roles-list">
+                <div class="role">
+                    <i class="fa-solid fa-chess-queen"></i>
+                    <h2>AI & ML Engineer</h2>
+                    <h3>Storygame Pvt Ltd</h3>
+                    <p>June 2025 - Present</p>
+                </div>
+                <div class="role">
+                    <i class="fa-solid fa-chess-queen"></i>
+                    <h2>Project Lead, B.Tech Major Project</h2>
+                    <h3>Vimal Jyothi Engineering College, Chemperi, Kannur</h3>
+                    <p>June 2022 - June 2023</p>
+                </div>
+                <div class="role">
+                    <i class="fa-solid fa-chess-queen"></i>
+                    <h2>Chief Creative Officer</h2>
+                    <h3>Innovation Club, Digital University Kerala</h3>
+                    <p>June 2024 - Dec 2024</p>
+                </div>
+                <div class="role">
+                    <i class="fa-solid fa-film"></i>
+                    <h2>Secretary, CleanCut Cinemas</h2>
+                    <h3>Film Club, Digital University Kerala</h3>
+                    <p>Nov 2023 - Nov 2024</p>
+                </div>
+                <div class="role">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <h2>Design Team Head</h2>
+                    <h3>Vyuham'24 Techfest, Digital University Kerala</h3>
+                    <p>Aug 2024 - Oct 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container-a">
+            <div class="section-title">
+                <h1 class="sub-title">My <span>Services</span></h1>
+                <div class="animated-divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-dot"></div>
+                </div>
+            </div>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>AI Integration & LLM Solutions</h2>
+                    <p>Build intelligent systems using Machine Learning, Deep Learning, and Large Language Models, from smart chatbots to domain-specific NLP tools.</p>
+                    <a href="#contact">Contact Me</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>Prototyping & Automation</h2>
+                    <p>Deliver rapid, scalable AI-powered prototypes for businesses, automating tasks, parsing documents, and building real-time decision systems.</p>
+                    <a href="#contact">Contact Me</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-tablet-screen-button"></i>
+                    <h2>AI Research</h2>
+                    <p>Turn data into actionable insights using advanced analytics and predictive algorithms for forecasting, pattern recognition, and optimization.</p>
+                    <a href="#contact">Contact Me</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <h2>Branding & Creative Design</h2>
+                    <p>Craft and design unique brand identities, from generative visuals, Logo, creative content and overall branding</p>
+                    <a href="#contact">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="section-title">My <span>Projects</span></h1>
+            <div class="animated-divider">
+                <div class="divider-line"></div>
+                <div class="divider-dot"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Baymax.AI -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/baymax.png" alt="Baymax.AI Project Demo" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">Featured</div>
+                        <h3>Baymax.AI: Emotionally Intelligent Conversational AI Agent</h3>
+                        <p class="project-description">A Conversational AI Agent built with PyTorch and Reinforcement Learning and fine-tuned using Gemini 2.5 Flash model, achieving high sentiment accuracy for empathetic conversations, adaptive dialogue to support mental well-being.</p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>Google Gemini</span>
+                            <span>NLP</span>
+                            <span>ReactJS</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="projects.html#baymax" class="project-btn">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="project-stats">
+                                <span><i class="fas fa-star"></i> 24</span>
+                                <span><i class="fas fa-code-branch"></i> 8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: ThinkOnIT -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/texture_analysis.jpg" alt="Texture Based Food Contamination" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">Featured</div>
+                        <h3>Texture-Based Food Contamination Detection Framework for Agricultural Products (Term paper)</h3>
+                        <p class="project-description">A computer vision-based framework for detecting food contamination in agricultural products using Texture analysis, Image Segmentation and Morphological Component Analysis.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>PyTorch</span>
+                            <span>OpenCV</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="projects.html#thinkonit" class="project-btn">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="project-stats">
+                                <span><i class="fas fa-star"></i> 24</span>
+                                <span><i class="fas fa-code-branch"></i> 8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Thesis -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Heart_brain.jpg" alt="Heart-Brain Connection Research" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-badge">Featured</div>
+                        <h3>Unveiling the Heart-Brain Connection (Thesis Project)</h3>
+                        <p class="project-description">A multimodal cognitive load classifier using ECG (HRV, Catch22) and EEG, achieving 92% accuracy for non-invasive mental state monitoring with Python and Neurokit2</p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>Neurokit2</span>
+                            <span>MNE</span>
+                            <span>Scikit-learn</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="projects.html#thesis" class="project-btn">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <div class="project-stats">
+                                <span><i class="fas fa-star"></i> 24</span>
+                                <span><i class="fas fa-code-branch"></i> 8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More projects (showing 3 main ones, link to projects page for all) -->
+            </div>
+
+            <div class="view-more">
+                <a href="projects.html" class="view-more-btn">
+                    See All Projects <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container-a">
+            <div class="contact-container">
+                <!-- Left Column - Contact Info -->
+                <div class="contact-info">
+                    <h1 class="section-title">Get In <span>Touch</span></h1>
+                    <p class="contact-subtitle">Just say hello!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <a href="mailto:akshaysasi12.km@gmail.com">akshaysasi12.km@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Phone</h3>
+                                <a href="tel:+918304912440">+91 8304912440</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Location</h3>
+                                <p>Kannur, Kerala, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Connect With Me</h3>
+                        <div class="social-icons">
+                            <a href="https://linkedin.com/in/akshay-sasi" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/AkshaySasi" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://twitter.com/_Aks_haY_" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter Profile">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com/ak__sky" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram Profile">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column - Contact Form -->
+                <div class="contact-form">
+                    <h2>Send Me a Message</h2>
+                    <form id="contactForm" class="form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required minlength="2" aria-label="Your Name">
+                            <label for="name">Your Name</label>
+                            <div class="underline"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required aria-label="Your Email">
+                            <label for="email">Your Email</label>
+                            <div class="underline"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required minlength="10" aria-label="Your Message"></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="underline"></div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    
+                    <div id="formStatus" role="alert" aria-live="polite"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>Copyright © <span id="currentYear"></span> Akshay Sasi. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Counter Animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const DIGIT_HEIGHT = 48;
+        
+            const rollToNumber = (elementId, targetValue) => {
+                const container = document.getElementById(elementId);
+                if (!container) return;
+                
+                container.innerHTML = '';
+                const digits = targetValue.toString().split('');
+            
+                digits.forEach((digit, index) => {
+                    const digitWrapper = document.createElement('div');
+                    digitWrapper.classList.add('digit-wrapper');
+                
+                    const digitList = document.createElement('div');
+                    digitList.classList.add('digit-list');
+                
+                    for (let i = 0; i < 10; i++) {
+                        const d = document.createElement('div');
+                        d.textContent = i;
+                        digitList.appendChild(d);
+                    }
+                
+                    digitWrapper.appendChild(digitList);
+                    container.appendChild(digitWrapper);
+                
+                    setTimeout(() => {
+                        const digitHeight = digitWrapper.clientHeight || DIGIT_HEIGHT;
+                        digitList.style.transform = `translateY(-${parseInt(digit) * digitHeight}px)`;
+                    }, index * 100);
+                });
+            };
+        
+            rollToNumber('xp-counter', 2);       
+            rollToNumber('project-counter', 10); 
+        });
+
+        // Menu Functions
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            if (sidemenu) sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            if (sidemenu) sidemenu.style.right = "-200px";
+        }
+
+        // Tab Switching
+        function openTab(tabName) {
+            const tabContents = document.getElementsByClassName("tab-content");
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active-tab");
+            }
+            
+            const tabButtons = document.getElementsByClassName("tab-btn");
+            for (let i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+            
+            const targetTab = document.getElementById(tabName);
+            if (targetTab) targetTab.classList.add("active-tab");
+            event.currentTarget.classList.add("active");
+        }
+
+        // Splash Screen
+        window.addEventListener("load", () => {
+            const splash = document.getElementById("splash");
+            if (splash) {
+                splash.style.opacity = 1;
+                setTimeout(() => {
+                    splash.style.opacity = 0;
+                    splash.style.transition = "opacity 0.3s ease";
+                    setTimeout(() => splash.style.display = "none", 300);
+                }, 600);
+            }
+        });
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle) {
+            themeToggle.addEventListener('change', function() {
+                document.body.classList.toggle('light-theme');
+                if (this.checked) {
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    localStorage.setItem('theme', 'dark');
+                }
+            });
+        }
+        
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme && themeToggle) {
+            document.body.classList.add(savedTheme + '-theme');
+            themeToggle.checked = savedTheme === 'light';
+        }
+
+        // Typing Animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const typingText = document.querySelector('.typing-text');
+            const cursor = document.querySelector('.cursor');
+            if (!typingText) return;
+            
+            const designations = ["AI Engineer", "Researcher", "Graphic Designer"];
+            let currentDesignation = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            let typingSpeed = 150;
+            
+            function type() {
+                const fullText = designations[currentDesignation];
+                
+                if (isDeleting) {
+                    typingText.textContent = fullText.substring(0, charIndex - 1);
+                    charIndex--;
+                    typingSpeed = 50;
+                } else {
+                    typingText.textContent = fullText.substring(0, charIndex + 1);
+                    charIndex++;
+                    typingSpeed = 150;
+                }
+                
+                if (!isDeleting && charIndex === fullText.length) {
+                    typingSpeed = 2000;
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    currentDesignation = (currentDesignation + 1) % designations.length;
+                    typingSpeed = 500;
+                }
+                
+                setTimeout(type, typingSpeed);
+            }
+            
+            setTimeout(type, 1000);
+        });
+
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const form = e.target;
+                const status = document.getElementById('formStatus');
+                const submitBtn = form.querySelector('button[type="submit"]');
+                
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                if (status) status.style.display = 'none';
+                
+                const formData = {
+                    name: form.name.value.trim(),
+                    email: form.email.value.trim(),
+                    message: form.message.value.trim()
+                };
+                
+                try {
+                    const response = await fetch('https://script.google.com/macros/s/AKfycbyz5od7oMH_s7-n4cjDP3T-n46yt6GfdYiAyQE-PTTc9BfbreFXqZx9PUzYmTdcIROFJA/exec', {
+                        method: 'POST',
+                        body: JSON.stringify(formData),
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    });
+                    
+                    const data = await response.json();
+                    
+                    if (!response.ok || data.result !== 'success') {
+                        throw new Error(data.message || 'Failed to send message');
+                    }
+                    
+                    showStatus('Message sent successfully! I\'ll get back to you soon.', 'success');
+                    form.reset();
+                } catch (error) {
+                    console.error('Error:', error);
+                    showStatus(error.message || 'Error sending message. Please try again later.', 'error');
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<span>Send Message</span><i class="fas fa-paper-plane"></i>';
+                }
+                
+                function showStatus(message, type) {
+                    if (!status) return;
+                    status.style.display = 'block';
+                    status.textContent = message;
+                    status.style.color = type === 'success' ? '#4CAF50' : '#f44336';
+                    status.style.backgroundColor = type === 'success' 
+                        ? 'rgba(76, 175, 80, 0.1)' 
+                        : 'rgba(244, 67, 54, 0.1)';
+                    status.style.padding = '15px';
+                    status.style.borderRadius = '5px';
+                    status.style.marginTop = '20px';
+                    
+                    setTimeout(() => {
+                        status.style.display = 'none';
+                    }, 5000);
+                }
+            });
+        }
+
+        // Set Current Year
+        const yearElement = document.getElementById('currentYear');
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
+
+        // Add to your main JS file
+        function showSkillCategory(event, categoryId) {
+    // Hide all categories
+    const categories = document.querySelectorAll('.skill-category');
+    categories.forEach(cat => cat.classList.remove('active'));
+    
+    // Remove active class from all tabs
+    const tabs = document.querySelectorAll('.tab-button');
+    tabs.forEach(tab => tab.classList.remove('active'));
+    
+    // Show selected category
+    const selectedCategory = document.getElementById(categoryId);
+    if (selectedCategory) {
+        selectedCategory.classList.add('active');
+    }
+    
+    // Add active class to clicked tab
+    event.currentTarget.classList.add('active');
+}
+    
+    
+    </script>
+</body>
+</html>
